@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  @apply absolute top-0 left-0 w-full h-full transition-all duration-500 ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-in {
+  animation: slider 3s ease-in forwards;
+  animation-delay: 3.5s;
+}
+
+.slide-out {
+  animation: slider-out 3s ease-out forwards;
+}
+
+.slider .slide:nth-child(1) {
+  background-color: antiquewhite;
+}
+
+.slider .slide:nth-child(2) {
+  background-color: aqua;
+}
+
+.slider .slide:nth-child(3) {
+  background-color: blueviolet;
+}
+
+.slider .slide:nth-child(4) {
+  background-color: aquamarine;
+}
+
+.slider .slide:nth-child(5) {
+  background-color: brown;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 0.3;
+  }
+  17% {
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slider-out {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 0.9;
+  }
+  17% {
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.root::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+
+}
+
+.overlay {
+  /* font-family:  sans-serif, monospace; */
+  /* font-weight: 600; */
+  position: absolute;
+  text-transform: uppercase;
+  font-variant-numeric: slashed-zero tabular-nums;
+  line-height: 1em;
+
+  /* text-shadow:0.08em 0em #940f08; */
+}
+
+.upperLeft {
+  top: 40px;
+  left: 50px;
+  font-size: 2em;
+  transform: skew(5deg, 5deg);
+  pointer-events: all;
+  cursor: pointer;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.5em;
+  }
+}
+
+.upperRight{
+  text-align: right;
+  top: 40px;
+  right: 50px;
+  font-size: 2em;
+  transform: skew(-5deg, -5deg);
+  pointer-events: all;
+  cursor: pointer;
+  text-decoration: none;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.5em;
+  }
+}
+
+.lowerLeft {
+  bottom: 50px;
+  left: 50px;
+  transform: skew(-5deg, -5deg);
+  width: 200px;
+
+}
+.lowerLeft h1 {
+  margin: 0;
+  font-size: 7em;
+  line-height: 1em;
+}
+.lowerLeft h2 {
+  margin: 0;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+.lowerRight{
+  bottom: 70px;
+  right: 50px;
+  transform: skew(-10deg, 5deg);
+  background: black;
+  /* & > div {
+    height: 100%;
+    background: indianred;
+  } */
+  text-decoration: none;
+  @media only screen and (max-width: 900px) {
+    bottom: 50px;
+    height: 40px;
+    width: 150px;
+  }
+  
+}
+
+
+.scanner span {
+  color: transparent;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.scanner span::before {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid indianred;
+  overflow: hidden;
+  color: indianred;
+  animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+
+  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+    border-right-color: transparent;
+  }
+
+  11%,21%,31%,41%,51%,61%,71%,81%,91% {
+    border-right-color: indianred;
+  }
+
+  60%, 80% {
+    width: 100%;
+  }
+}
+
+.infinite-scroll-loop {
+
+
+}
