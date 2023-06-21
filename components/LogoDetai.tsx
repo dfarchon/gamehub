@@ -38,7 +38,11 @@ export default function LogoDetail({
       </div>
       <div className="mt-auto flex text-white mb-5">
         <a
-          className="ml-auto mx-2 text-[#FFF8DC] z-30 cursor-pointer"
+          className={`ml-auto mx-2 text-[#FFF8DC] z-30 cursor-pointer ${
+            name === "dfarchon"
+              ? "text-xl animate__animated animate__heartBeat animate__infinite	infinite"
+              : ""
+          }`}
           onClick={handleClick}
         >
           [{name === "dfarchon" ? "Enter Game" : "View More"}]

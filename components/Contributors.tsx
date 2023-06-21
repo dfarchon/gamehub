@@ -31,7 +31,9 @@ function ContributorCard({ data, ...props }: { data: any }) {
         <img
           src={data.avatar}
           height={128}
-          style={{ filter: "drop-shadow(8px 8px 8px white) grayscale(60%)" }}
+          style={{
+            filter: "drop-shadow(8px 8px 8px white) grayscale(60%)",
+          }}
           className="rounded-md"
         />
       </div>
