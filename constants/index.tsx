@@ -84,6 +84,80 @@ export const SPONSORS = [
     },
   },
 ];
+export const SPONSORS_OUTER = [
+  {
+    name: "web3mq",
+    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
+    logo: "/images/web3mq.png",
+    color: "#9A26F9",
+    handleClick: () => {
+      window.open("//web3mq.com/");
+    },
+  },
+  {
+    name: "mask",
+    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
+    logo: "/images/mask.png",
+    color: "#1FB3FB",
+    handleClick: () => {
+      window.open("//mask.io/");
+    },
+  },
+  {
+    name: "web3mq",
+    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
+    logo: "/images/web3mq.png",
+    color: "#9A26F9",
+    handleClick: () => {
+      window.open("//web3mq.com/");
+    },
+  },
+  {
+    name: "mask",
+    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
+    logo: "/images/mask.png",
+    color: "#1FB3FB",
+    handleClick: () => {
+      window.open("//mask.io/");
+    },
+  },
+  {
+    name: "web3mq",
+    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
+    logo: "/images/web3mq.png",
+    color: "#9A26F9",
+    handleClick: () => {
+      window.open("//web3mq.com/");
+    },
+  },
+  {
+    name: "mask",
+    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
+    logo: "/images/mask.png",
+    color: "#1FB3FB",
+    handleClick: () => {
+      window.open("//mask.io/");
+    },
+  },
+  {
+    name: "web3mq",
+    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
+    logo: "/images/web3mq.png",
+    color: "#9A26F9",
+    handleClick: () => {
+      window.open("//web3mq.com/");
+    },
+  },
+  {
+    name: "mask",
+    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
+    logo: "/images/mask.png",
+    color: "#1FB3FB",
+    handleClick: () => {
+      window.open("//mask.io/");
+    },
+  },
+];
 export const GOD = {
   name: "God",
   desc: "Go Fuck Yourself",

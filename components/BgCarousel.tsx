@@ -15,7 +15,7 @@ import { Float, Line, Sphere, Stars, useTexture } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
-import { SPONSORS, DAD, PanelContext } from "@/constants";
+import { SPONSORS, SPONSORS_OUTER, DAD, PanelContext } from "@/constants";
 
 const colors = ["black", "skyblue", "antiquewhite", "aquamarine", "blueviolet"];
 
@@ -51,6 +51,7 @@ export default function BgCarousel(props: any) {
             handleClick={DAD.handleClick}
           />
           <Planets datas={SPONSORS} />
+          <PlanetsOuter datas={SPONSORS_OUTER} />
         </Float>
 
         <Stars
@@ -99,7 +100,13 @@ function Curves(props: any) {
       ),
     []
   );
-
+  const pointsXL = useMemo(
+    () =>
+      new THREE.EllipseCurve(0, 0, 9, 9, 0, 2 * Math.PI, false, 0).getPoints(
+        100
+      ),
+    []
+  );
   const pointsL = useMemo(
     () =>
       new THREE.EllipseCurve(0, 0, 7, 7, 0, 2 * Math.PI, false, 0).getPoints(
@@ -125,11 +132,28 @@ function Curves(props: any) {
     <group {...props}>
       <Line
         worldUnits
+        points={pointsXL}
+        color="white"
+        lineWidth={0.05}
+        position={[0, 0, 0]}
+      />
+      <Line
+        worldUnits
         points={pointsL}
         color="white"
         lineWidth={0.05}
         position={[0, 0, 0]}
       />
+
+      <Line
+        worldUnits
+        points={pointsS}
+        color="white"
+        lineWidth={0.05}
+        rotation={[0, 0, 0]}
+        position={[0, 0, 1]}
+      />
+
       <Line
         worldUnits
         points={pointsM}
@@ -141,15 +165,6 @@ function Curves(props: any) {
         dashSize={0.2}
         dashScale={3}
       />
-      <Line
-        worldUnits
-        points={pointsS}
-        color="white"
-        lineWidth={0.05}
-        rotation={[0, 0, 0]}
-        position={[0, 0, 1]}
-      />
-
       <Line
         worldUnits
         points={pointsEllipse}
@@ -190,6 +205,25 @@ function Planets({ datas, ...props }: { datas: any }) {
         position={[
           Math.sin((2 * Math.PI * index) / datas.length) * 7,
           Math.cos((2 * Math.PI * index) / datas.length) * 7,
+          0.1,
+        ]}
+        speed={2}
+        radius={0.5}
+        data={data}
+        scale={1}
+        handleClick={data.handleClick}
+      />
+    );
+  });
+}
+function PlanetsOuter({ datas, ...props }: { datas: any }) {
+  return datas.map((data: any, index: number) => {
+    return (
+      <Logo
+        key={index}
+        position={[
+          Math.sin((2 * Math.PI * index) / datas.length) * 9,
+          Math.cos((2 * Math.PI * index) / datas.length) * 9,
           0.1,
         ]}
         speed={2}
