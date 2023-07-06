@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 export const DAD = {
   name: "dfarchon",
-  desc: "A development team focused on fully on-chain game, working on a more user-friendly gaming environment.",
+  desc: "DeGame (www.degame.com) is a leading Web3 gaming aggregator and community engagement platform, listing over 4000 projects. Our aim is to establish a Proof of Contribution platform for Games, NFTs, and Metaverse initiatives. We strive to guide users towards top projects through community engagement and ranking data. Additionally, we serve as long-term ecosystem partners for NFT game development across various Layer1 and Layer2 projects, actively recruiting developers for our partner network.",
   logo: "/images/dfarchon.png",
   color: "#cd5c5c",
   handleClick: () => {

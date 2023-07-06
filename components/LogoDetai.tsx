@@ -31,10 +31,11 @@ export default function LogoDetail({
         <div className="my-auto grow text-3xl mx-3">{name}</div>
       </div>
       <div
-        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal break-all hyphens-auto"
-        style={{ minHeight: (desc?.length / 24) * 30 }}
+        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal break-all hyphens-auto mb-4"
+        // style={{ minHeight: (desc?.length / 24) * 20 + 50 }}
       >
-        <TextFromRandomLetters text={desc} speed={1} />
+        {/* <TextFromRandomLetters text={desc} speed={1} /> */}
+        {desc}
       </div>
       <div className="mt-auto flex text-white mb-5">
         <a
