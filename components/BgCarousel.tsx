@@ -17,12 +17,19 @@ import { useSpring, animated } from "@react-spring/three";
 
 import { SPONSORS_ONE,SPONSORS_TWO, SPONSORS_THREE, SPONSORS_FOUR,DAD, PanelContext } from "@/constants";
 
-const colors = ["black", "skyblue", "antiquewhite", "aquamarine", "blueviolet"];
+const colors = [
+  "black",
+  "skyblue",
+  "antiquewhite",
+  "aquamarine",
+  "blueviolet",
+  "midnightblue",
+];
 
 extend({ OrbitControls });
 
 export default function BgCarousel(props: any) {
-  const [bgColor, setBgColor] = useState(colors[0]);
+  const [bgColor, setBgColor] = useState(colors[5]);
 
   useEffect(() => {}, []);
 
@@ -161,17 +168,6 @@ function Curves(props: any) {
 
       <Line
         worldUnits
-        points={pointsM}
-        color="white"
-        lineWidth={0.05}
-        rotation={[0, 0, 0]}
-        position={[0, 0, 0.5]}
-        dashed
-        dashSize={0.2}
-        dashScale={3}
-      />
-      <Line
-        worldUnits
         points={pointsEllipse}
         color="#e2e2e2"
         lineWidth={0.05}
@@ -181,11 +177,22 @@ function Curves(props: any) {
       />
       <Line
         worldUnits
+        points={pointsM}
+        color="white"
+        lineWidth={0.05}
+        rotation={[0, 0, 0]}
+        position={[0, 0, -0.5]}
+        // dashed
+        dashSize={0.2}
+        dashScale={3}
+      />
+      <Line
+        worldUnits
         points={pointsEllipse}
         color="#e2e2e2"
         lineWidth={0.05}
         rotation={[0, 0, 0.5]}
-        dashed
+        // dashed
         dashSize={0.6}
         dashScale={3}
       />
@@ -195,7 +202,7 @@ function Curves(props: any) {
         color="#e2e2e2"
         lineWidth={0.05}
         rotation={[0, 0, -0.5]}
-        dashed
+        // dashed
         dashSize={0.6}
         dashScale={3}
       />
@@ -223,7 +230,9 @@ function PlanetsOne({ datas, ...props }: { datas: any }) {
 }
 
 
+
 function PlanetsTwo({ datas, ...props }: { datas: any }) {
+
   return datas.map((data: any, index: number) => {
     return (
       <Logo
@@ -244,7 +253,9 @@ function PlanetsTwo({ datas, ...props }: { datas: any }) {
 }
 
 
+
 function PlanetsThree({ datas, ...props }: { datas: any }) {
+
   return datas.map((data: any, index: number) => {
     return (
       <Logo

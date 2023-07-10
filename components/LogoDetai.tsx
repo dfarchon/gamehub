@@ -28,10 +28,10 @@ export default function LogoDetail({
         <div className="logo my-auto">
           <img src={logo} alt={name} width={60} />
         </div>
-        <div className="my-auto grow text-3xl mx-3">{name}</div>
+        <div className="my-auto grow text-3xl mx-3 hyphens-manual">{name}</div>
       </div>
       <div
-        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal break-all hyphens-auto mb-4"
+        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal hyphens-manual mb-4"
         // style={{ minHeight: (desc?.length / 24) * 20 + 50 }}
       >
         {/* <TextFromRandomLetters text={desc} speed={1} /> */}
@@ -57,6 +57,7 @@ export default function LogoDetail({
       height="96"
       className="animate__animated animate__zoomIn"
       onMouseOver={() => sponsor !== GOD && setActive(true)}
+      style={{ backgroundColor: "midnightblue" }}
     />
   );
 }
