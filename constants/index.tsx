@@ -287,7 +287,7 @@ export const SPONSORS_THREE = [
   {
     name: "DappChaser",
     desc: "DAppChaser is a distributed organization focusing on blockchain-based innovations and DApp developments.",
-    logo: "/images/logo/DappChaser.png",
+    logo: "/images/logo/dappchaser.png",
     color: "#fff",
     handleClick: () => {
       window.open("https://twitter.com/dappchaser");
