@@ -15,7 +15,7 @@ import { Float, Line, Sphere, Stars, useTexture } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
-import { SPONSORS, SPONSORS_OUTER, DAD, PanelContext } from "@/constants";
+import { SPONSORS_ONE,SPONSORS_TWO, SPONSORS_THREE, SPONSORS_FOUR,DAD, PanelContext } from "@/constants";
 
 const colors = ["black", "skyblue", "antiquewhite", "aquamarine", "blueviolet"];
 
@@ -41,7 +41,8 @@ export default function BgCarousel(props: any) {
         <ambientLight intensity={0.25} />
 
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
-          <Curves />
+     
+          {/* <Curves /> */}
           <Logo
             position={[0, 0, 0.1]}
             speed={2}
@@ -50,9 +51,12 @@ export default function BgCarousel(props: any) {
             scale={2}
             handleClick={DAD.handleClick}
           />
-          <PlanetsInter datas={SPONSORS} />
-          <Planets datas={SPONSORS} />
-          <PlanetsOuter datas={SPONSORS_OUTER} />
+
+        <PlanetsOne datas ={SPONSORS_ONE} />
+        <PlanetsTwo datas={SPONSORS_TWO} />
+        <PlanetsThree datas={SPONSORS_THREE} />
+        <PlanetsFour datas={SPONSORS_FOUR} />
+      
         </Float>
 
         <Stars
@@ -198,9 +202,28 @@ function Curves(props: any) {
     </group>
   );
 }
+function PlanetsOne({ datas, ...props }: { datas: any }) {
+  return datas.map((data: any, index: number) => {
+    return (
+      <Logo
+        key={index}
+        position={[
+          Math.sin((2 * Math.PI * index) / datas.length) * 2.5,
+          Math.cos((2 * Math.PI * index) / datas.length) * 2.5,
+          0.1,
+        ]}
+        speed={2}
+        radius={0.5}
+        data={data}
+        scale={1}
+        handleClick={data.handleClick}
+      />
+    );
+  });
+}
 
 
-function PlanetsInter({ datas, ...props }: { datas: any }) {
+function PlanetsTwo({ datas, ...props }: { datas: any }) {
   return datas.map((data: any, index: number) => {
     return (
       <Logo
@@ -221,14 +244,14 @@ function PlanetsInter({ datas, ...props }: { datas: any }) {
 }
 
 
-function Planets({ datas, ...props }: { datas: any }) {
+function PlanetsThree({ datas, ...props }: { datas: any }) {
   return datas.map((data: any, index: number) => {
     return (
       <Logo
         key={index}
         position={[
-          Math.sin((2 * Math.PI * index) / datas.length) * 7,
-          Math.cos((2 * Math.PI * index) / datas.length) * 7,
+          Math.sin((2 * Math.PI * index) / datas.length) * 7.5,
+          Math.cos((2 * Math.PI * index) / datas.length) * 7.5,
           0.1,
         ]}
         speed={2}
@@ -240,14 +263,14 @@ function Planets({ datas, ...props }: { datas: any }) {
     );
   });
 }
-function PlanetsOuter({ datas, ...props }: { datas: any }) {
+function PlanetsFour({ datas, ...props }: { datas: any }) {
   return datas.map((data: any, index: number) => {
     return (
       <Logo
         key={index}
         position={[
-          Math.sin((2 * Math.PI * index) / datas.length) * 9,
-          Math.cos((2 * Math.PI * index) / datas.length) * 9,
+          Math.sin((2 * Math.PI * index) / datas.length) * 10,
+          Math.cos((2 * Math.PI * index) / datas.length) * 10,
           0.1,
         ]}
         speed={2}

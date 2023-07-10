@@ -11,7 +11,7 @@ export const DAD = {
   },
 };
 
-export const SPONSORS = [
+export const SPONSORS_ONE = [
 
   {
     name: "Dark Forest",
@@ -33,7 +33,7 @@ export const SPONSORS = [
       What's more, we also pay close attention to other on-chain game projects or teams like treaty, realms, mud.dev, etc, \
       prepare to work on top of those projects as well.",
     logo: "/images/dfarchon.png",
-    color: "#cd5c5c",
+    color: "#fee763",
     handleClick: () => {
       window.open("https://dfarchon.xyz/");
     },
@@ -58,6 +58,17 @@ export const SPONSORS = [
     },
   },
   {
+    name: "AGLD DAO",
+    desc: "AGLD DAO is committed to building Autonomous Worlds that embody the principles of decentralization, \
+    transparency, fairness, and most importantly community sovereignty. The Loot Chain is designed to be a home for\
+     builders in the Lootverse. It will become the go-to place for building new games, tools, and worlds within the Lootverse.",
+    logo: "/images/logo/AGLDDAO.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://adventuregold.org/");
+    },
+  },
+  {
     name: "Mask Network",
     desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
     logo: "/images/logo/Mask.svg",
@@ -67,17 +78,24 @@ export const SPONSORS = [
     },
   },
 
+ 
+
   {
-    name: "AGLD DAO",
-    desc: "AGLD DAO is committed to building Autonomous Worlds that embody the principles of decentralization, \
-    transparency, fairness, and most importantly community sovereignty. The Loot Chain is designed to be a home for\
-     builders in the Lootverse. It will become the go-to place for building new games, tools, and worlds within the Lootverse.",
-    logo: "/images/logo/AGLDDAO.png",
-    color: "#1FB3FB",
+    name: "Web3MQ",
+    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of \
+    encryption by being decentralized and supporting distributed sovereignty.",
+    logo: "/images/web3mq.png",
+    color: "#9A26F9",
     handleClick: () => {
-      window.open("https://adventuregold.org/");
+      window.open("//web3mq.com/");
     },
   },
+
+
+];
+
+
+export const SPONSORS_TWO = [
 
   {
     name: "DeGame",
@@ -127,7 +145,7 @@ export const SPONSORS = [
      We hope our guild may possess different perspectives at the same time, as visionary as waterdrops. \
      We will uphold the aim of peaceful development and help real blockchain games to grow and prosper.",
     logo: "/images/logo/MarrowDAO.png",
-    color: "#06beca",
+    color: "#fff",
     handleClick: () => {
       window.open("https://twitter.com/marrowdao");
     },
@@ -140,7 +158,7 @@ export const SPONSORS = [
     name: "OrdenGG",
     desc: "we are the orden, a professional on-chain esport team | We won 3/4 of the last dark forest rounds",
     logo: "/images/logo/OrdenGG.png",
-    color: "#06beca",
+    color: "#fff201",
     handleClick: () => {
       window.open("https://twitter.com/orden_gg");
     },
@@ -150,23 +168,13 @@ export const SPONSORS = [
     name: "DFDAO",
     desc: "DFDAO is a collective of Dark Forest players. To play Dark Forest is to build Dark Forest.",
     logo: "/images/logo/DFDAO.png",
-    color: "#1FB3FB",
+    color: "#03ce95",
     handleClick: () => {
       window.open("https://mask.io/");
     },
   },
 
-  {
-    name: "Web3MQ",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of \
-    encryption by being decentralized and supporting distributed sovereignty.",
-    logo: "/images/web3mq.png",
-    color: "#9A26F9",
-    handleClick: () => {
-      window.open("//web3mq.com/");
-    },
-  },
-
+  
 
 
   {
@@ -176,7 +184,7 @@ export const SPONSORS = [
      As an honored metaverse agency for The Sandbox, we've launched games like the 'Maya Water Park'\
      and created immersive experiences such as the 'Chongqing Underground City', inspired by Liu Cixin's novel 'The Wandering Earth'..",
     logo: "/images/logo/01a1.png",
-    color: "#9A26F9",
+    color: "#6389f1",
     handleClick: () => {
       window.open("https://twitter.com/01a1Official");
     },
@@ -193,93 +201,306 @@ export const SPONSORS = [
       and inclusive lifestyle, Weirdo Ghost Gang amplifies creative content and operations to inspire. \
       Their unwavering essence is to \"OUTA THE BOX, BE A WEIRDO.\"",
     logo: "/images/logo/WeirdoGhostGang.png",
-    color: "#9A26F9",
+    color: "#fff",
     handleClick: () => {
       window.open("https://www.weirdoghost.com/");
     },
   },
 
   
+  {
+    name: "Briq",
+    desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
+    logo: "/images/logo/Briq.png",
+    color: "#f35601",
+    handleClick: () => {
+      window.open("https://twitter.com/bripNFT");
+    },
+  },
+  {
+    name: "SeeDAO",
+    desc: "SeeDAO is a blockchain-based digital city-state, \
+    which manifests itself as a decentralized digital network (SeeDAO Network) \
+    and physical strong holds Seeshore manned around the world, built governed and shared by SeeDAO members.\
+    It aims to help the birth of quality Web3 projects from education, information, and activities",
+    logo: "/images/logo/SeeDAO.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://seedao.xyz/");
+    },
+  }, 
 
 
+  {
+    name: "NetherScape",
+    desc: "on-chain game using MUD engine to build a permissionless, composable, and autonomous RPG world.",
+    logo: "/images/logo/NetherScape.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/netherscape_xyz");
+    },
+  },   
+];
+export const SPONSORS_THREE = [
+  {
+    name: "BlockBeats",
+    desc: "News and one of the sharpest Chinese observers on Crypto, Web3.0 industry.",
+    logo: "/images/logo/BlockBeats.png",
+    color: "#457cee",
+    handleClick: () => {
+      window.open("https://twitter.com/BlockBeatsAsia");
+    },
+  }, 
+  {
+    name: "Cointime",
+    desc: "Crypto News, We Are Fast!",
+    logo: "/images/logo/Cointime.png",
+    color: "#36ab10",
+    handleClick: () => {
+      window.open("https://twitter.com/Cointime_global");
+    },
+  }, 
+
+
+  {
+    name: "ChainCatcher",
+    desc: "为你带来最新资讯的专业 #crypto 媒体，与创新者共建 #Web3 世界。开启 🔔 ，及时获取最新加密资讯；评论、转发，打破加密信息传播的壁垒",
+    logo: "/images/logo/ChainCatcher.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/ChainCatcher_");
+    },
+  }, 
   
+
+  {
+    name: "ForesightNews",
+    desc: "Foresight News is the largest multilingual Web3 media platform in the Asia-Pacific region. \
+    Since its establishment in January 2022, it has rapidly grown into one of the most influential Web3 integrated platform for media.",
+    logo: "/images/logo/ForesightNews.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/Foresight_News");
+    },
+  }, 
+
+  {
+    name: "DappChaser",
+    desc: "DAppChaser is a distributed organization focusing on blockchain-based innovations and DApp developments.",
+    logo: "/images/logo/DappChaser.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/dappchaser");
+    },
+  }, 
+
+  {
+    name: "AW House",
+    desc: "AW house is an Ecosystem for Autonomous World builders",
+    logo: "/images/logo/AWHouse.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/AW_house");
+    },
+  }, 
+
+
+  {
+    name: "Paladins DAO",
+    desc: "Paladins is 100 governing members of a \
+    gaming investments dao with the objective of developing and supporting gaming native IPs with an innovative crowdfunding model.",
+    logo: "/images/logo/PaladinsDAO.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/paladinsdao");
+    },
+  }, 
+
+
+  {
+    name: "UpchainDAO",
+    desc: "UpchainDAO is the homeland for blockchain technology enthusiasts to help developers enter the web3",
+    logo: "/images/logo/UpchainDAO.svg",
+    color: "#0767C8",
+    handleClick: () => {
+      window.open("https://learnblockchain.cn/");
+    },
+  }, 
+
+
+  {
+    name: "LXDAO",
+    desc: "LXDAO is an R&D-focused DAO in Web3. Focus on supporting valuable Web3 \
+    Public Goods and Open Source sustainably. As of now, LXDAO has supported 12+ projects, \
+    reaching out to a community of 2000+ members and having 65+ registered members.",
+    logo: "/images/logo/LXDAO.png",
+    color: "#36AFF9",
+    handleClick: () => {
+      window.open("https://lxdao.io/");
+    },
+  }, 
+
+  {
+    name: "Matrix World",
+    desc: "Matrix World is an open world that enables users to build 3D immersive applications on top of several blockchains. \
+    In Matrix World, users can take advantage of traditional 3D open-world features such \
+    as building 3D architectures, hosting virtual meetings, exhibiting NFTs, \
+    and more advanced functionality such as creating their own 3D decentralized applications (dApps) using Matrix's built-in computational resources.",
+    logo: "/images/logo/MatrixWorld.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://matrixworld.org/home");
+    },
+  }, 
+  {
+    name: " Crypto Chasers",
+    desc: "The CryptoChasers community was established in December 2020, \
+    created by Script Money. The community mainly consists of experienced \
+    Crypto players and technically proficient developers. In October 2021,\
+     it issued robot NFT, established the Robot DAO, and defined the mission, values, and goals of the DAO.",
+    logo: "/images/logo/CryptoChasers.png",
+    color: "#f7931a",
+    handleClick: () => {
+      window.open("http://cryptochasers.co");
+    },
+  }, 
+
+  {
+    name: "AW Research",
+    desc: "AW Research is a research team focused on studying the Autonomous World. \
+    We are committed to track the latest news in the Autonomous World,\
+     exploring the journey from fully on chain games to the Autonomous World, and providing strategies for on chain games.",
+    logo: "/images/logo/AWResearch.png",
+    color: "#0a9053",
+    handleClick: () => {
+      window.open("http://cryptochasers.co");
+    },
+  }, 
+
+
+  {
+    name: "BlockPi",
+    desc: "BlockPI is a multi-chain globally distributed RPC Network, \
+    offering topnotch RPC services with low cost, high performance, \
+    low latency for all web3 projects. Also, BlockPI is paving its way on building a \
+    unified platform with a suite of tools designed for Account Abstraction infrastructures.",
+    logo: "/images/logo/BlockPi.png",
+    color: " #22DEBB",
+    handleClick: () => {
+      window.open("https://blockpi.io/");
+    },
+  }, 
+
+
+  {
+    name: "WhaleDAO",
+    desc: "WhalerDAO based on the pure Crypto concept, \
+    aims to create a decentralized autonomous organization (DAO) that combines education and promotion, \
+    investment and research. Within a diverse and thriving community ecosystem, \
+    it forms a self-governing commercial loop for open governance, media distribution, and product development.",
+    logo: "/images/logo/WhaleDAO.png",
+    color: " #fff",
+    handleClick: () => {
+      window.open("https://www.notion.so/Whaler-DAO-c32aaa836f9943919b24614ec3a4aea0");
+    },
+  }, 
+
+
+
+  {
+    name: "Gametaverse",
+    desc: "Gametaverse strives to be the go-to aggregator for fully on-chain(FOC) and Web3 games, \
+    offering users a user-friendly, real-time dashboard that consolidates\
+     all blockchain game data and monitors the entire FOC game infrastructure.",
+    logo: "/images/logo/Gametaverse.png",
+    color: " #31a8ff",
+    handleClick: () => {
+      window.open("https://twitter.com/GametaverseDAO");
+    },
+  }, 
+
+
+
+  {
+    name: "BuidlerDAO",
+    desc: "Buidler DAO gathers Web3 doers in research, \
+    technology, operations and other fields, establishes a Web3 talent network and project accelerator; \
+    builds SocialDAO governance paradigm and DAO tools solution with its own practice.\
+    The five major guilds work together: Technology and Incubation Guilds integrate build \
+    and accelerate internal and external projects; Research and Education guilds output original\
+     content such as in-depth research, courses, and podcasts; Operation guilds work on the governance system \
+     and cooperative ecology that drives community growth.",
+    logo: "/images/logo/BuidlerDAO.png",
+    color: " #00f38a",
+    handleClick: () => {
+      window.open("https://www.buidlerdao.xyz/");
+    },
+  }, 
+
+  {
+    name: "THUBA",
+    desc: "Tsinghua University Student Blockchain Association, our mission is to cultivate the next generation of Web3 leaders.",
+    logo: "/images/logo/THUBA.png",
+    color: " #743581",
+    handleClick: () => {
+      window.open("https://twitter.com/THUBA_DAO");
+    },
+  }, 
+
+  {
+    name: "NJUBA",
+    desc: "NJU Blockchain Association was established in September 2018 by \
+    about 100 students who love blockchain and formed with the support of\
+     NJU Blockchain Lab. NJU BA aims to gather blockchain technology talents and enthusiasts,\
+     spread correct blockchain values, provide a platform for students to learn and exchange blockchain technology.",
+    logo: "/images/logo/NJUBA.png",
+    color: " #c868b3",
+    handleClick: () => {
+      window.open("");
+    },
+  }, 
+  {
+    name: "RUChain",
+    desc: "RUChain is a student club formed spontaneously \
+    by students of Renmin University of China. Its goal is to nurture\
+     top talent in blockchain, explore the infinite possibilities of blockchain, \
+     and lead the development of the blockchain industry.",
+    logo: "/images/logo/RUChain.png",
+    color: " #c868b3",
+    handleClick: () => {
+      window.open("https://twitter.com/ruchain_");
+    },
+  }, 
+
+  {
+    name: "SIEA",
+    desc: "SIEA is an organization under the guidance of Sdu Alumni\
+     Office and supported by Sdu Alumni Youth CEO Club. It has gathered\
+      multiple resources, aiming to help more innovation and entrepreneurship teams at Shandong University.",
+    logo: "/images/logo/SIEA.png",
+    color: " #cd5c5c",
+    handleClick: () => {
+      window.open("");
+    },
+  }, 
+
+  {
+    name: "PTADAO",
+    desc: "",
+    logo: "/images/logo/PTADAO.svg",
+    color: " #cd5c5c",
+    handleClick: () => {
+      window.open("https://twitter.com/BallyballNFT/status/1641790570204102657");
+    },
+  }, 
 ];
 
 
 
-export const SPONSORS_OUTER = [
-  {
-    name: "web3mq",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
-    logo: "/images/web3mq.png",
-    color: "#9A26F9",
-    handleClick: () => {
-      window.open("//web3mq.com/");
-    },
-  },
-  {
-    name: "mask",
-    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
-    logo: "/images/mask.png",
-    color: "#1FB3FB",
-    handleClick: () => {
-      window.open("//mask.io/");
-    },
-  },
-  {
-    name: "web3mq",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
-    logo: "/images/web3mq.png",
-    color: "#9A26F9",
-    handleClick: () => {
-      window.open("//web3mq.com/");
-    },
-  },
-  {
-    name: "mask",
-    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
-    logo: "/images/mask.png",
-    color: "#1FB3FB",
-    handleClick: () => {
-      window.open("//mask.io/");
-    },
-  },
-  {
-    name: "web3mq",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
-    logo: "/images/web3mq.png",
-    color: "#9A26F9",
-    handleClick: () => {
-      window.open("//web3mq.com/");
-    },
-  },
-  {
-    name: "mask",
-    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
-    logo: "/images/mask.png",
-    color: "#1FB3FB",
-    handleClick: () => {
-      window.open("//mask.io/");
-    },
-  },
-  {
-    name: "web3mq",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of encryption by being decentralized and supporting distributed sovereignty.",
-    logo: "/images/web3mq.png",
-    color: "#9A26F9",
-    handleClick: () => {
-      window.open("//web3mq.com/");
-    },
-  },
-  {
-    name: "mask",
-    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
-    logo: "/images/mask.png",
-    color: "#1FB3FB",
-    handleClick: () => {
-      window.open("//mask.io/");
-    },
-  },
+
+export const SPONSORS_FOUR = [
+  
+ 
 ];
 
 
