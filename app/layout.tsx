@@ -6,8 +6,8 @@ const font = localFont({
 });
 
 export const metadata = {
-  title: "DF Ares round 1",
-  description: "Who see this is an idiot",
+  title: "DF ARES",
+  description: "Dark Forest Community Rounds with Novel Game Mechanics Powered by DF Archon",
 };
 
 export default function RootLayout({

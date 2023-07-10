@@ -50,6 +50,7 @@ export default function BgCarousel(props: any) {
             scale={2}
             handleClick={DAD.handleClick}
           />
+          <PlanetsInter datas={SPONSORS} />
           <Planets datas={SPONSORS} />
           <PlanetsOuter datas={SPONSORS_OUTER} />
         </Float>
@@ -197,6 +198,29 @@ function Curves(props: any) {
     </group>
   );
 }
+
+
+function PlanetsInter({ datas, ...props }: { datas: any }) {
+  return datas.map((data: any, index: number) => {
+    return (
+      <Logo
+        key={index}
+        position={[
+          Math.sin((2 * Math.PI * index) / datas.length) * 5,
+          Math.cos((2 * Math.PI * index) / datas.length) * 5,
+          0.1,
+        ]}
+        speed={2}
+        radius={0.5}
+        data={data}
+        scale={1}
+        handleClick={data.handleClick}
+      />
+    );
+  });
+}
+
+
 function Planets({ datas, ...props }: { datas: any }) {
   return datas.map((data: any, index: number) => {
     return (

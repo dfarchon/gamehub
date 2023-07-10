@@ -38,16 +38,27 @@ export default function Overlay({ ...props }: {}) {
 
   return (
     <div className="select-none">
+
       <div
         className="overlay upperLeft transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster"
         style={{
           color: sponsor.color ?? "#cd5c5c",
         }}
       >
-        Round
+        DF ARES V0.1
         <br />
-        One
+        ROUND 1
+
+        <br />
+
+        <br />
+
+        Dark Forest
+        <br/>
+          
+        Community Round
       </div>
+      
       <div
         className="overlay upperRight transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster z-50"
         style={{
@@ -55,11 +66,11 @@ export default function Overlay({ ...props }: {}) {
         }}
       >
         <a href="https://twitter.com/DFArchon" target="_blank">
-          Twitter
+          TWITTER
         </a>
         <br />
         <a href="https://github.com/dfarchon" target="_blank">
-          Github
+          GITHUB
         </a>
         <br />
         <a href="#" onClick={() => setActiveContributors(!activeContributors)}>
@@ -73,8 +84,11 @@ export default function Overlay({ ...props }: {}) {
           color: sponsor.color ?? "#cd5c5c",
         }}
       >
-        <h1>{planets}</h1>
+        {/* <h1>{planets}</h1> */}
+        <h1> 1024</h1>
         <h2>Planets Conquered</h2>
+
+      
       </div>
       <div
         className="overlay lowerRight transition-all duration-500 ease-in-out  z-30"
