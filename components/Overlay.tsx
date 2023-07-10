@@ -73,10 +73,10 @@ export default function Overlay({ ...props }: {}) {
           GITHUB
         </a>
         <br />
-        <a href="#" onClick={() => setActiveContributors(!activeContributors)}>
+        {/* <a href="#" onClick={() => setActiveContributors(!activeContributors)}>
           Contributors
         </a>
-        <Contributors active={activeContributors} />
+        <Contributors active={activeContributors} /> */}
       </div>
       <div
         className="overlay lowerLeft transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster"
