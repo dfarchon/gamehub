@@ -299,7 +299,7 @@ export const SPONSORS_THREE = [
     ChainCatcher has accumulated profound industry resources after five years\
      in this field and has reached cooperation with industry leaders such as Flow, Binance, Mina, and Filecoin.",
     logo: "/images/logo/ChainCatcher.png",
-    color: "#fff",
+    color: "#e9edfc",
     handleClick: () => {
       window.open("https://www.chaincatcher.com/");
     },
@@ -311,7 +311,7 @@ export const SPONSORS_THREE = [
     desc: "Foresight News is the largest multilingual Web3 media platform in the Asia-Pacific region. \
     Since its establishment in January 2022, it has rapidly grown into one of the most influential Web3 integrated platform for media.",
     logo: "/images/logo/ForesightNews.png",
-    color: "#fff",
+    color: "#4b65bf",
     handleClick: () => {
       window.open("https://twitter.com/Foresight_News");
     },
@@ -321,7 +321,7 @@ export const SPONSORS_THREE = [
     name: "DappChaser",
     desc: "DAppChaser is a distributed organization focusing on blockchain-based innovations and DApp developments.",
     logo: "/images/logo/dappchaser.png",
-    color: "#fff",
+    color: "#85ddda",
     handleClick: () => {
       window.open("https://twitter.com/dappchaser");
     },

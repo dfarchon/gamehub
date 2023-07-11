@@ -65,14 +65,25 @@ export default function Overlay({ ...props }: {}) {
           color: sponsor.color ?? "#cd5c5c",
         }}
       >
+         <a href="https://discord.gg/f3FrFA4T25" target="_blank">
+          DISCORD
+        </a>
+        <br />
+
         <a href="https://twitter.com/DFArchon" target="_blank">
           TWITTER
         </a>
         <br />
+      
         <a href="https://github.com/dfarchon" target="_blank">
           GITHUB
         </a>
+
         <br />
+
+        
+
+       
         {/* <a href="#" onClick={() => setActiveContributors(!activeContributors)}>
           Contributors
         </a>
