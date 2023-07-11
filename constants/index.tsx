@@ -268,6 +268,16 @@ export const SPONSORS_TWO = [
     },
   },   
 
+  {
+    name: "AW House",
+    desc: "AW house is an Ecosystem for Autonomous World builders.",
+    logo: "/images/logo/AWHouse.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://twitter.com/AW_house");
+    },
+  }, 
+
 
 
 ];
@@ -339,15 +349,6 @@ export const SPONSORS_THREE = [
     },
   }, 
 
-  {
-    name: "AW House",
-    desc: "AW house is an Ecosystem for Autonomous World builders.",
-    logo: "/images/logo/AWHouse.png",
-    color: "#fff",
-    handleClick: () => {
-      window.open("https://twitter.com/AW_house");
-    },
-  }, 
 
 
   {
@@ -554,6 +555,33 @@ export const SPONSORS_THREE = [
       window.open("https://cellula.life/");
     },
   }, 
+
+
+  {
+    name: "WTF Academy",
+    desc: "Web3 Open University for Web2 devs. Learn, test, and get certified at WTF Academy. Backed by  @Ethereum",
+    logo: "/images/logo/WTFAcademy.png",
+    color: " #f97407",
+    handleClick: () => {
+      window.open("https://twitter.com/WTFAcademy_");
+    },
+  }, 
+
+  {
+    name: "Dapp-Learning",
+    desc: "An  online open-sourced developer community focusing on Ethereum.\
+     We are designed for developers to step into blockchain DAPP development,\
+      where they can learn DeFi, NFT, DAO, CRYPTO projects. We hope we could not \
+      only give junior developers a feasible and easy-to-use blockchain DAPP learning roadmap,\
+       but also present advanced developers with a platform for communication and cooperation.",
+    logo: "/images/logo/DappLearning.png",
+    color: " #a5fbf7",
+    handleClick: () => {
+      window.open("https://twitter.com/Dapp_Learning");
+    },
+  }, 
+
+
 
 
 ];
