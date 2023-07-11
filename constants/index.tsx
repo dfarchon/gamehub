@@ -496,7 +496,7 @@ export const SPONSORS_THREE = [
      top talent in blockchain, explore the infinite possibilities of blockchain, \
      and lead the development of the blockchain industry.",
     logo: "/images/logo/RUChain.png",
-    color: " #c868b3",
+    color: " #efe8e8",
     handleClick: () => {
       window.open("https://twitter.com/ruchain_");
     },
