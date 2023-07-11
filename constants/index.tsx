@@ -177,6 +177,17 @@ export const SPONSORS_TWO = [
     },
   },
 
+  {
+    name: "277DAO",
+    desc: "We, 277 DAO, are a Chinese community that provides technical support, strategy sharing and NFT rewards for blockchain game players.\
+    In order to make players enjoy blockchain game better, we will often organize community rounds with great rewards for you to win.\
+    We look forward to your joining us!",
+    logo: "/images/logo/277DAO.png",
+    color: "#c3c8d0",
+    handleClick: () => {
+      window.open("https://277dao.com/");
+    },
+  },
   
 
 
