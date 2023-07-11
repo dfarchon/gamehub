@@ -530,14 +530,14 @@ export const SPONSORS_THREE = [
 
 
   {
-    name: "Cellular",
+    name: "Cellula",
     desc: "Cellula is a fully on-chain artificial life simulation game.\
      Players explore, cultivate, evolve, and collect unique Life forms in the game.\
     In this game, the rules of Conway's Game of Life are considered the genetic\
      code of the Life forms, determining their forms and vitality.\
       Using the game's crafting table, players can freely create a variety of genetic sequences \
       and give birth to their own on-chain Life forms. These Life forms have unique appearances and properties, and exhibit diverse life forms.",
-    logo: "/images/logo/Cellular.png",
+    logo: "/images/logo/Cellula.png",
     color: " #03feda",
     handleClick: () => {
       window.open("https://cellula.life/");
