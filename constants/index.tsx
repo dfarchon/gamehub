@@ -243,6 +243,22 @@ export const SPONSORS_TWO = [
       window.open("https://twitter.com/netherscape_xyz");
     },
   },   
+
+
+  {
+    name: "TownStory Galaxy",
+    desc: "TownStory Galaxy is a free-to-play Web3 social simulation game built on Arbitrum Nova.\
+     We have also incorporated AI elements into the game, such as finding hidden AI \
+     in the game by imitating user behavior and participating in player interaction.",
+    logo: "/images/logo/TownStoryGALAXY.jpg",
+    color: "#ff8e25",
+    handleClick: () => {
+      window.open("https://townstory.io/");
+    },
+  },   
+
+
+
 ];
 export const SPONSORS_THREE = [
   {
@@ -299,6 +315,18 @@ export const SPONSORS_THREE = [
       window.open("https://twitter.com/dappchaser");
     },
   }, 
+  {
+    name: "Matrix World",
+    desc: "Matrix World is an open world that enables users to build 3D immersive applications on top of several blockchains. \
+    In Matrix World, users can take advantage of traditional 3D open-world features such \
+    as building 3D architectures, hosting virtual meetings, exhibiting NFTs, \
+    and more advanced functionality such as creating their own 3D decentralized applications (dApps) using Matrix's built-in computational resources.",
+    logo: "/images/logo/MatrixWorld.png",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://matrixworld.org/home");
+    },
+  }, 
 
   {
     name: "AW House",
@@ -346,18 +374,7 @@ export const SPONSORS_THREE = [
     },
   }, 
 
-  {
-    name: "Matrix World",
-    desc: "Matrix World is an open world that enables users to build 3D immersive applications on top of several blockchains. \
-    In Matrix World, users can take advantage of traditional 3D open-world features such \
-    as building 3D architectures, hosting virtual meetings, exhibiting NFTs, \
-    and more advanced functionality such as creating their own 3D decentralized applications (dApps) using Matrix's built-in computational resources.",
-    logo: "/images/logo/MatrixWorld.png",
-    color: "#fff",
-    handleClick: () => {
-      window.open("https://matrixworld.org/home");
-    },
-  }, 
+
   {
     name: " Crypto Chasers",
     desc: "The CryptoChasers community was established in December 2020, \
@@ -429,13 +446,9 @@ export const SPONSORS_THREE = [
 
   {
     name: "BuidlerDAO",
-    desc: "Buidler DAO gathers Web3 doers in research, \
-    technology, operations and other fields, establishes a Web3 talent network and project accelerator; \
-    builds SocialDAO governance paradigm and DAO tools solution with its own practice.\
-    The five major guilds work together: Technology and Incubation Guilds integrate build \
-    and accelerate internal and external projects; Research and Education guilds output original\
-     content such as in-depth research, courses, and podcasts; Operation guilds work on the governance system \
-     and cooperative ecology that drives community growth.",
+    desc: "\"Move over hodl, it's time to buidl!\" \
+    Buidler DAO gathers Web3 doers in research, technology, operations and other fields, \
+    establishes a Web3 talent network and project accelerator; builds SocialDAO governance paradigm and DAO tools solution with its own practice.",
     logo: "/images/logo/BuidlerDAO.png",
     color: " #00f38a",
     handleClick: () => {
@@ -492,13 +505,46 @@ export const SPONSORS_THREE = [
 
   {
     name: "PTADAO",
-    desc: "",
+    desc: "PTADAO aims to be a gathering place for the most dynamic and talented AI \
+    and Web3 professionals from around the world, and to develop Web3 and\
+     AI products based on a radical market concept. Here is where developers can grow and\
+      collaborate with like-minded partners to quickly launch new products.",
     logo: "/images/logo/PTADAO.svg",
     color: " #cd5c5c",
     handleClick: () => {
       window.open("https://twitter.com/BallyballNFT/status/1641790570204102657");
     },
   }, 
+
+  {
+    name: "ZJUBCA",
+    desc: "Providing an excellent platform for student interaction \
+    and learning about blockchain. serving as one of the core support teams for the Zhejiang University-affiliated Z DAO, \
+    the association strives to bridge the gap between research institutions and blockchain enthusiasts.",
+    logo: "/images/logo/ZJUBCA.png",
+    color: " #9d9895",
+    handleClick: () => {
+      window.open("https://twitter.com/zjubca");
+    },
+  }, 
+
+
+  {
+    name: "Cellular",
+    desc: "Cellula is a fully on-chain artificial life simulation game.\
+     Players explore, cultivate, evolve, and collect unique Life forms in the game.\
+    In this game, the rules of Conway's Game of Life are considered the genetic\
+     code of the Life forms, determining their forms and vitality.\
+      Using the game's crafting table, players can freely create a variety of genetic sequences \
+      and give birth to their own on-chain Life forms. These Life forms have unique appearances and properties, and exhibit diverse life forms.",
+    logo: "/images/logo/Cellular.png",
+    color: " #03feda",
+    handleClick: () => {
+      window.open("https://cellula.life/");
+    },
+  }, 
+
+
 ];
 
 
