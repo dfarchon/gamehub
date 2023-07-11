@@ -27,10 +27,10 @@ export const SPONSORS_ONE = [
     name: "DF Archon",
     desc: "DF Archon is a development team focused on fully on-chain game, \
       working on a more user-friendly gaming environment. \
-      In Dark Forest ecosystem, we've built quite a few of useful plugins, \
-      DF GAIA(A user-friendly Dark Forest plugin development library),\
-      DF ARTEMIS (Planet-targeted bounty mercenary system for Dark Forest), DF APOLLO (Automated assisted operating System for Dark Forest).\
-      What's more, we also pay close attention to other on-chain game projects or teams like treaty, realms, mud.dev, etc, \
+      In Dark Forest ecosystem, we've built quite a few of cool projects: \
+      DF GAIA,\
+      DF ARTEMIS , DF APOLLO.\
+     We also pay close attention to other on-chain game projects or teams, \
       prepare to work on top of those projects as well.",
     logo: "/images/dfarchon.png",
     color: "#fee763",
@@ -82,8 +82,13 @@ export const SPONSORS_ONE = [
 
   {
     name: "Web3MQ",
-    desc: "Web3MQ, as a Web3 native communication protocol, fully embodies the fundamental characteristics of \
-    encryption by being decentralized and supporting distributed sovereignty.",
+    desc: "Message relay network for Web3 based on current test results,\
+     offering a trustless and seamless interactive experience. \
+     With its interoperability, permissionless composability, and other features,\
+      Web3MQ lowers integration barriers and provides developers with\
+       convenient customization options. Web3MQ offers solutions for games, \
+       social applications, and wallets, making it the next-generation provider\
+        for fully on-chain gaming communication. ",
     logo: "/images/web3mq.png",
     color: "#9A26F9",
     handleClick: () => {
@@ -141,9 +146,7 @@ export const SPONSORS_TWO = [
      The main members are Solidity developers, node operators,\
      blockchain game players and investment analysts. All of them are loyal players of the Dark Forest.\
     Guild W believes in the future of native blockchain games and in the power of technology.\
-    We are building a professional e-sports team with both software developers and game players.\
-     We hope our guild may possess different perspectives at the same time, as visionary as waterdrops. \
-     We will uphold the aim of peaceful development and help real blockchain games to grow and prosper.",
+    We are building a professional e-sports team with both software developers and game players.",
     logo: "/images/logo/MarrowDAO.png",
     color: "#fff",
     handleClick: () => {
@@ -156,7 +159,7 @@ export const SPONSORS_TWO = [
 
   {
     name: "OrdenGG",
-    desc: "we are the orden, a professional on-chain esport team | We won 3/4 of the last dark forest rounds",
+    desc: "We are the orden, a professional on-chain esport team | We won 3/4 of the last dark forest rounds.",
     logo: "/images/logo/OrdenGG.png",
     color: "#fff201",
     handleClick: () => {
@@ -182,7 +185,7 @@ export const SPONSORS_TWO = [
     desc: "At 01a1, we're a dedicated metaverse studio,\
      navigating new domains of digital art with an innovative spirit. \
      As an honored metaverse agency for The Sandbox, we've launched games like the 'Maya Water Park'\
-     and created immersive experiences such as the 'Chongqing Underground City', inspired by Liu Cixin's novel 'The Wandering Earth'..",
+     and created immersive experiences such as the 'Chongqing Underground City', inspired by Liu Cixin's novel 'The Wandering Earth'.",
     logo: "/images/logo/01a1.png",
     color: "#6389f1",
     handleClick: () => {
@@ -264,11 +267,14 @@ export const SPONSORS_THREE = [
 
   {
     name: "ChainCatcher",
-    desc: "为你带来最新资讯的专业 #crypto 媒体，与创新者共建 #Web3 世界。开启 🔔 ，及时获取最新加密资讯；评论、转发，打破加密信息传播的壁垒",
+    desc: "ChainCatcher is a leading Web3 Chinese media founded in January 2018, \
+    with over 1 million+ users and 1 billion+ reads. \
+    ChainCatcher has accumulated profound industry resources after five years\
+     in this field and has reached cooperation with industry leaders such as Flow, Binance, Mina, and Filecoin.",
     logo: "/images/logo/ChainCatcher.png",
     color: "#fff",
     handleClick: () => {
-      window.open("https://twitter.com/ChainCatcher_");
+      window.open("https://www.chaincatcher.com/");
     },
   }, 
   
@@ -296,7 +302,7 @@ export const SPONSORS_THREE = [
 
   {
     name: "AW House",
-    desc: "AW house is an Ecosystem for Autonomous World builders",
+    desc: "AW house is an Ecosystem for Autonomous World builders.",
     logo: "/images/logo/AWHouse.png",
     color: "#fff",
     handleClick: () => {
@@ -319,7 +325,7 @@ export const SPONSORS_THREE = [
 
   {
     name: "UpchainDAO",
-    desc: "UpchainDAO is the homeland for blockchain technology enthusiasts to help developers enter the web3",
+    desc: "UpchainDAO is the homeland for blockchain technology enthusiasts to help developers enter the web3.",
     logo: "/images/logo/UpchainDAO.svg",
     color: "#0767C8",
     handleClick: () => {
