@@ -580,9 +580,26 @@ export const SPONSORS_THREE = [
       window.open("https://twitter.com/Dapp_Learning");
     },
   }, 
+  {
+    name: "FFG DAO",
+    desc: "Platform for onchain cryptoeconomic games",
+    logo: "/images/logo/FFGDAO.png",
+    color: " #03fa7d",
+    handleClick: () => {
+      window.open("hhttps://twitter.com/FFG_DAO");
+    },
+  }, 
 
 
-
+  {
+    name: "Rooch",
+    desc: "Rooch is a Fast, Modular, Secured, Developer-Friendly infrastructure solution for building Web3 Native applications.",
+    logo: "/images/logo/Rooch.png",
+    color: " #fff",
+    handleClick: () => {
+      window.open("https://twitter.com/RoochNetwork");
+    },
+  }, 
 
 ];
 
