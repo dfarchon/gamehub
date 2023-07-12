@@ -428,12 +428,12 @@ export const SPONSORS_THREE = [
 
 
   {
-    name: "WhaleDAO",
+    name: "WhalerDAO",
     desc: "WhalerDAO based on the pure Crypto concept, \
     aims to create a decentralized autonomous organization (DAO) that combines education and promotion, \
     investment and research. Within a diverse and thriving community ecosystem, \
     it forms a self-governing commercial loop for open governance, media distribution, and product development.",
-    logo: "/images/logo/WhaleDAO.png",
+    logo: "/images/logo/WhalerDAO.png",
     color: " #fff",
     handleClick: () => {
       window.open("https://www.notion.so/Whaler-DAO-c32aaa836f9943919b24614ec3a4aea0");
@@ -598,6 +598,18 @@ export const SPONSORS_THREE = [
     color: " #fff",
     handleClick: () => {
       window.open("https://twitter.com/RoochNetwork");
+    },
+  }, 
+
+
+  {
+    name: "ggQuest",
+    desc: "ggQuest is a gaming reputation protocol which can be used for gamers to maintain a \
+    comprehensive record of their gaming history across multiple games and chains.",
+    logo: "/images/logo/ggQuest.png",
+    color: " #fff",
+    handleClick: () => {
+      window.open("https://twitter.com/gg_Quest_gg");
     },
   }, 
 
