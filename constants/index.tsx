@@ -613,6 +613,20 @@ export const SPONSORS_THREE = [
     },
   }, 
 
+
+  {
+    name: "CryptoChasers Robot",
+    desc: "CryptoChasers Robot is the first NFT of the CryptoChasers community. \
+    The community is primarily composed of experienced crypto enthusiasts and skilled scientists.\
+     By joining the community, members gain access to the latest event information,\
+      money-making experiences sharing, and practical technical guidance. ",
+    logo: "/images/logo/CryptoChasersRobot.png",
+    color: " #0A92AA",
+    handleClick: () => {
+      window.open("https://robot.cryptochasers.co/");
+    },
+  }, 
+
 ];
 
 
