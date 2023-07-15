@@ -328,8 +328,8 @@ export const SPONSORS_THREE = [
   }, 
 
   {
-    name: "DappChaser",
-    desc: "DAppChaser is a distributed organization focusing on blockchain-based innovations and DApp developments.",
+    name: "DAppChaser",
+    desc: "DAppChaser is a distributed organization founded in 2018, focusing on blockchain-based innovations and DApp developments.",
     logo: "/images/logo/dappchaser.png",
     color: "#85ddda",
     handleClick: () => {
