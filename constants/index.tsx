@@ -7,7 +7,7 @@ export const DAD = {
   logo: "/images/logo/DFARES.png",
   color: "#feae34",
   handleClick: () => {
-    window.open("https://dfares.xyz/play/0xda5052db1f383b2e82c829608c85ab82cdbd2206","_self");
+    window.open("https://dfares.xyz/play/0x5f988849d4f8c84e6a9d2e0e9ad6e6792d89a5f9","_self");
   },
 };
 
