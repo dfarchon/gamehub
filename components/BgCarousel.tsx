@@ -15,7 +15,7 @@ import { Float, Line, Sphere, Stars, useTexture } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
-import { SPONSORS_ONE,SPONSORS_TWO, SPONSORS_THREE, SPONSORS_FOUR,DAD, PanelContext } from "@/constants";
+import { DARKFOREST,SPONSORS_ONE,SPONSORS_TWO, SPONSORS_THREE, SPONSORS_FOUR, PanelContext } from "@/constants";
 
 const colors = [
   "black",
@@ -54,9 +54,9 @@ export default function BgCarousel(props: any) {
             position={[0, 0, 0.1]}
             speed={2}
             radius={0.5}
-            data={DAD}
+            data={DARKFOREST}
             scale={2}
-            handleClick={DAD.handleClick}
+            handleClick={DARKFOREST.handleClick}
           />
 
         <PlanetsOne datas ={SPONSORS_ONE} />
@@ -304,7 +304,7 @@ function Logo({
 
   ...props
 }: {
-  data: typeof DAD;
+  data: typeof DARKFOREST;
   handleClick: () => void;
   radius: number;
   speed: number;
@@ -378,137 +378,3 @@ function SunWithMoon({
     </group>
   );
 }
-
-// function Atom(props: any) {
-//   const dfarchon = useLoader(TextureLoader, "/images/dfarchon.png");
-//   const disc = useLoader(TextureLoader, "/images/disc.png");
-//   const mask = useLoader(TextureLoader, "/images/mask.svg");
-//   const web3mq = useLoader(TextureLoader, "/images/web3mq.png");
-//   const pointsL = useMemo(
-//     () =>
-//       new THREE.EllipseCurve(0, 0, 7, 7, 0, 2 * Math.PI, false, 0).getPoints(
-//         100
-//       ),
-//     []
-//   );
-//   const pointsM = useMemo(
-//     () =>
-//       new THREE.EllipseCurve(0, 0, 5, 5, 0, 2 * Math.PI, false, 0).getPoints(
-//         100
-//       ),
-//     []
-//   );
-//   const pointsS = useMemo(
-//     () =>
-//       new THREE.EllipseCurve(0, 0, 3, 3, 0, 2 * Math.PI, false, 0).getPoints(
-//         100
-//       ),
-//     []
-//   );
-//   return (
-//     <group {...props}>
-//       <Line
-//         worldUnits
-//         points={pointsL}
-//         color="white"
-//         lineWidth={0.05}
-//         position={[0, 0, 0]}
-//       />
-//       <Line
-//         worldUnits
-//         points={pointsM}
-//         color="white"
-//         lineWidth={0.05}
-//         rotation={[0, 0, 0]}
-//         position={[0, 0, 0.5]}
-//         dashed
-//         dashSize={0.2}
-//         dashScale={3}
-//       />
-//       <Line
-//         worldUnits
-//         points={pointsS}
-//         color="white"
-//         lineWidth={0.05}
-//         rotation={[0, 0, 0]}
-//         position={[0, 0, 1]}
-//       />
-//       {/* <Electron
-//         position={[Math.sin(Math.PI) * 7, Math.cos(Math.PI) * 7, 0]}
-//         speed={2}
-//         radius={0.5}
-//       />
-//       <Electron
-//         position={[Math.sin(Math.PI) * 5, Math.cos(Math.PI) * 5, 0.5]}
-//         rotation={[0, 0, 0]}
-//         speed={2.5}
-//         radius={0.5}
-//       />
-//       <Electron
-//         position={[Math.sin(Math.PI) * 3, Math.cos(Math.PI) * 3, 1]}
-//         rotation={[0, 0, 0]}
-//         speed={3}
-//         radius={0.5}
-//       /> */}
-
-//       {/* <Sphere
-//         args={[0.7, 64, 64]}
-//         onPointerEnter={props.handleChange}
-//         position={[0, 0, 1]}
-//       >
-//         <meshBasicMaterial color={[6, 0.5, 2]} toneMapped={false} />
-//       </Sphere> */}
-//       <Logo
-//         position={[Math.sin(Math.PI) * 7, Math.cos(Math.PI) * 7, 0.1]}
-//         speed={2}
-//         radius={0.5}
-//         logo={web3mq}
-//         scale={1}
-//       />
-//       <Logo
-//         position={[Math.sin(Math.PI) * 5, Math.cos(Math.PI) * 5, 0.6]}
-//         speed={2.5}
-//         radius={0.5}
-//         logo={mask}
-//         scale={1}
-//       />
-//       <Logo
-//         position={[Math.sin(Math.PI) * 3, Math.cos(Math.PI) * 3, 1.1]}
-//         speed={3}
-//         radius={0.5}
-//         scale={1}
-//         logo={web3mq}
-//       />
-
-//       <Logo
-//         position={[0, 0, 0]}
-//         speed={3}
-//         radius={0.5}
-//         logo={dfarchon}
-//         scale={2}
-//       />
-//     </group>
-//   );
-// }
-// function Electron({ radius = 3, speed = 6, ...props }) {
-//   const [active, setActive] = useState(false);
-//   const { scale } = useSpring({
-//     scale: active ? 2 : 1,
-//   });
-
-//   const handleToggle = useCallback(() => {
-//     setActive(!active);
-//   }, [active]);
-
-//   return (
-//     <animated.mesh
-//       position={props.position}
-//       scale={scale}
-//       onPointerEnter={handleToggle}
-//       onPointerLeave={handleToggle}
-//     >
-//       <sphereGeometry args={[radius]} />
-//       <meshBasicMaterial color={"#e2e2e2"} toneMapped={false} />
-//     </animated.mesh>
-//   );
-// }

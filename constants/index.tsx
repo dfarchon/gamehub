@@ -1,43 +1,130 @@
 import { createContext } from "react";
 
-export const DAD = {
-  name: "DF ARES",
-  desc: "DF ARES are Dark Forest\
-   Community Rounds with Novel Game Mechanics hosted by DF Archon.",
-  logo: "/images/logo/DFARES.png",
-  color: "#feae34",
+export const DARKFOREST = {
+  name: "Dark Forest",
+  desc: "Dark Forest is an MMO strategy game built with zkSNARKs on Gnosis Chain (formerly xDai). \
+  Players explore an infinite, procedurally-generated universe, conquering planets and growing a space empire.",
+  logo: "/images/logo/DF.png",
+  color: "#06fc1a",
+  twitter: "https://twitter.com/darkforest_eth",
+  discord: "https://discord.com/invite/2u2TN6v8r6",
+  github: "https://github.com/darkforest-eth",
   handleClick: () => {
-    window.open("https://dfares.xyz/play/0x5f988849d4f8c84e6a9d2e0e9ad6e6792d89a5f9","_self");
+    window.open("https://zkga.me");
   },
+};
+
+export const DFArchon = {
+  name: "DF Archon",
+  desc: "DF Archon is a development team focused on fully on-chain game, \
+    working on a more user-friendly gaming environment. \
+    In Dark Forest ecosystem, we've built quite a few of cool projects: \
+    DF GAIA,\
+    DF ARTEMIS , DF APOLLO.\
+   We also pay close attention to other on-chain game projects or teams, \
+    prepare to work on top of those projects as well.",
+  logo: "/images/dfarchon.png",
+  color: "#fee763",
+  handleClick: () => {
+    window.open("https://dfarchon.xyz/");
+  },
+};
+
+export const GOD = {
+  name: "God",
+  desc: "GM everyone",
+  logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAIIUlEQVR4nO2ad2yOXxTHX3vPWlFBEEpstcWIESPUVusVxIr4w96bhqConRIxS6ldGiNmrGpi1o69CRI7qfPL58TT3/u+nud9Hq2VX35/nPS+995z7j33nvG956nL5XLJf4Rcf3oD/yvi+lU3ki5dOqlataq43W4JCwuTFStWSFRUlBLtmTNn6liVKlV07l91IxkzZpR27dpJTEyM3Lx5U7Zu3Srjx4+XTp06ScOGDaVatWpKtOmbMGGC19y2bduqjD+mSM6cOWX06NFy/fp1WbJkidSqVUvSpEnjmD9t2rRSu3Zt5b127ZqMGjVKcuTI8fsUYbM9evSQq1evypgxY1Sh1J5mrly5ZNy4cZKYmCjdunX79YrkzZtXdu7cKevWrZMCBQr8DHPwokKFCsmGDRtkx44dkidPnl+jSNmyZeXSpUvSvXv3n66AL7ndbl0rKCjo5ypSvXp1vXYiklPB+fPnlxYtWkjfvn2VaOfLl88xf3BwsK7J35+iCDeBwDJlyjgS2KxZMzl06JDEx8fLwoULZcSIEUoRERFy7tw5OXjwoDRt2tSRrKCgIF3b4c349wmumPBpJwin37Rpk+zatUsqVKhgOa9ixYqyZ88ezS1OAkVwcLBcvHjRic9YRycc24lPoPCZM2ekf//+jk1n4MCBcvr0aUdO7Xa7Zdu2bSlThBC7fv1620XI0JhL165dHSthEId04MABR1k+KipKQkNDf0wREhN5omDBgn6FDx8+XM1k//79KYIcmTJlkqNHj0psbKzKctmEZvwle/bszhUhY5Ps/AnGvhG8ePFiefz4sXz58kVevXolZ8+eVV+ZPn26DB48WG8W00DmvHnzFJ7g9G/evJHPnz/L/fv3ZdGiRSorp43PAG8IHI4UAfcAGeyEAgqPHz+ebOP4VP369bUfe2azbO7u3bty584ddVjmb968WaZOneoVypHBWFhYmN81c+fOrXuzwGbeHe3bt9dTtjOLuLg4BX6cKjdCYMDZAwMDbXmLFi0qAwYM0Aj35MkTlYGsuLg4W95ly5ZJSEiIvSIg0ho1atgKxIfSp0+vvgGqjY6Oltu3b8v79+91Yx8+fFB68eKFPH/+XD5+/KiECb57907nwtOxY0eVgazExETbdevUqaN8fhVBIGjWCYpFEX/jbBRzadCggdKJEye0LzUyXd9Q840bN/SvpSLY7ZYtW2yFZc2aVRISEkzHMC38gk15LkYb+8ZfrMwvISFBZdutT8CoXLmytSK9evXSyGAniBAIBPHsA0YQij99+iRr1qyx5F27dq3O2b17t5QuXdprLD4+3l94TabJkydrNLRUhKco9m4niIhGmAXKv379Wn0Cu8d5fTdnRsxBEXjgRUZAQIDKdAJbunTpouHdUhHe1YRQO0Ekp8OHD0vmzJn1dO3m2xFRD2c/cuSIyrab36hRI41elorwqHEC1UuVKqUnSpsoZOJ4jgleQjDt2NhYKVGihC0PINYEPv24Ijga2Zv227dvpXz58slj8+fP12QIedoxbaOfOUY/vFeuXNF2dHS0ouNUK+LUtOrVqycrV67UNlGod+/eyWOYG5kawlyMftpGP3OMfnj37t2r7dWrV2tBItWmNWPGDOncubOtIMo/s2fP1jb5ITw8PMWmNXfuXH100Z4zZ45V1vYiUPC0adOsFQHcOQm/ADfj7UEhgrCbUkWANoBL2oMGDZKhQ4c6Cr8m76R/f1ABBKLYCVq6dKk0adJE21OmTLHN2P7o8uXLesPGM3mxA5wHKK1UqZJ/iAJ4s4tCgDsjunCKX79+/dGKh1K5cuWUt1+/fvq7ZMmSsm/fvtRDFAiIQtXQCWA0nJWk9uzZMy8nxtxOnTrlRZ4myFzAJLx9+vTRvgwZMtjirbp16+pTwGTMu4NrpoxpJcjIwMZvFLl165Y6/b1797TkQwgF+VIG9ST6CLcgggcPHsixY8eU11DE5XJpeKYGYLX+8uXLpU2bNs4fVpQxzQS1bt1aFixY8J0ixm2y2QsXLsjJkye/4+VWGGOOcaq+ikREREirVq0sH1bcGDdnqwg0cuRIrcWajc2aNcsLj3kqAhEEeArQ37JlSzl//rwSBTo2zFjjxo2T5/sqEhoaqpjPbO2JEyfKsGHDrG7r+04QKI8cM9yDORQpUsRSEd9HEBVHTIm22RxfRQIDAxXH+c4rXLiwIoBs2bI5VwSivLNx48bvFCRcevZ16NBB7d1Kjh1RfECGZ98Vkw1jijbI3H+8Jkkav8n6ZGLPOdwaT9iUKgKv782Hh4frE9jz1h3kN+tBcBHVD4rYxqmYYSFguF1dysoXHz16ZGqSm76BUuoH7MEq+DhSBKJ4jb+Q9YlmZsmSojTvkubNmztWgkAAj1lBO+23ZzFrsraTx5qjzwoUkvEDf/XXSZMmaZbGvoksbMJ3Ts2aNXWMOcz1h+u2b9+uazopoDtWxMBB2DNQ37Of+hRQnjGeuqtWrdKNUnWkNEQdABsnd7x8+VLHIiMjFSzCAy8yPGVGRkbqmNPPDz+kCFSsWDG1aeN22Cj+QTnUzOQwNcwH4iDMTGjs2LEqA1kxMTHy8OFDXYMi3i//qgt0T0pK0lBcvHhxv3P5dEBG9zcHGdxUUlKSyv6tn6fBXNgxoA/YwJvC80XoaZJmt8HcIUOGKC8ykBUQEJBSJVKuiEFZsmTRojRFOQoRFBLIzGAmgGLPnj2VaNPH2NOnT3UuPPAi46/7F46QkBB9eFHa4bMdzgzRpo8x0Otf9y8crr+HXH96A/8r4vI4hH8AcLDXLsciS2oAAAAASUVORK5CYII=",
+  color: "#cd5c5c",
+  handleClick: () => {},
 };
 
 export const SPONSORS_ONE = [
 
   {
-    name: "Dark Forest",
-    desc: "Dark Forest is an MMO strategy game built with zkSNARKs on Gnosis Chain (formerly xDai). \
-    Players explore an infinite, procedurally-generated universe, conquering planets and growing a space empire.",
-    logo: "/images/logo/DF.png",
-    color: "#06fc1a",
+    name: "OrdenGG",
+    desc: "We are the orden, a professional on-chain esport team | We won 3/4 of the last dark forest rounds.",
+    logo: "/images/logo/OrdenGG.png",
+    twitter: 'https://twitter.com/orden_gg',
+    discord: 'https://discord.com/invite/orden',
+    github: 'https://github.com/orden-gg',
+    color: "#fff201",
     handleClick: () => {
-      window.open("https://zkga.me");
-    },
-  }, 
-  {
-    name: "DF Archon",
-    desc: "DF Archon is a development team focused on fully on-chain game, \
-      working on a more user-friendly gaming environment. \
-      In Dark Forest ecosystem, we've built quite a few of cool projects: \
-      DF GAIA,\
-      DF ARTEMIS , DF APOLLO.\
-     We also pay close attention to other on-chain game projects or teams, \
-      prepare to work on top of those projects as well.",
-    logo: "/images/dfarchon.png",
-    color: "#fee763",
-    handleClick: () => {
-      window.open("https://dfarchon.xyz/");
+      window.open("https://twitter.com/orden_gg");
     },
   },
+
+
+  {
+    name: "MarrowDAO | Guild W",
+    desc: "Guild W is the first on-chain e-sports team, incubated by MarrowDAO.\
+     The main members are Solidity developers, node operators,\
+     blockchain game players and investment analysts. All of them are loyal players of the Dark Forest.\
+    Guild W believes in the future of native blockchain games and in the power of technology.\
+    We are building a professional e-sports team with both software developers and game players.",
+    logo: "/images/logo/MarrowDAO.png",
+    twitter: "https://twitter.com/marrowdao",
+    discord: "https://discord.gg/nH6fR7cY",
+    github: "https://github.com/guild-w",
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://github.com/guild-w");
+    },
+  },
+
+  {
+    name: "Dark Forest Arena",
+    desc: "Dark Forest Arena is the first MOBA-style fully on-chain game.\
+    It emphasizes action-packed gameplay in short, intense game rounds. Dark Forest Arena is a modified version of Dark Forest maintained by DF DAO. ",
+    logo: "/images/logo/DFDAO.png",
+    color: "#03ce95",
+    twitter: "https://twitter.com/d_fdao",
+    discord: "http://discord.gg/aaHada53mQ",
+    github: "http://github.com/dfdao",
+    handleClick: () => {
+      window.open(
+        "https://arena.dfdao.xyz/",
+        "_blank"
+      );
+    },
+  },
+  { 
+    name: "Dark Forest ARES v0.1",
+    desc: "Dark Forest ARES v0.1.1 is based on the code of Dark Forest v0.6.5, exploring more fun MMORTS mechanics by adding magic artifacts.\
+    Dark Forest ARES are Dark Forest\
+   Community Rounds hosted by DF Archon.",
+    logo: "/images/logo/DFARES.png",
+    color: "#feae34",
+    twitter: "https://twitter.com/DFArchon",
+    discord: "https://discord.com/invite/XpBPEnsvgX",
+    github: "https://github.com/dfarchon/DFARES-v0.1",
+    handleClick: () => {
+      window.open(
+        "https://dfares-redstone.netlify.app/",
+        "_blank"
+      );
+    },
+  },
+
+  {
+    name: "277DAO",
+    desc: "We, 277 DAO, are a Chinese community that provides technical support, strategy sharing and NFT rewards for blockchain game players.\
+    In order to make players enjoy blockchain game better, we will often organize community rounds with great rewards for you to win.\
+    We look forward to your joining us!",
+    logo: "/images/logo/277DAO.png",
+    twitter: 'https://twitter.com/277dao_',
+    discord: '',
+    github: 'https://github.com/277dao',
+    color: "#c3c8d0",
+    handleClick: () => {
+      window.open("https://dfgame.277dao.com/");
+    },
+  },
+
+
+
+  
+
+  
 
   {
     name: "AltLayer",
@@ -78,8 +165,6 @@ export const SPONSORS_ONE = [
     },
   },
 
- 
-
   {
     name: "Web3MQ",
     desc: "Message relay network for Web3 based on current test results,\
@@ -95,13 +180,9 @@ export const SPONSORS_ONE = [
       window.open("//web3mq.com/");
     },
   },
-
-
 ];
 
-
 export const SPONSORS_TWO = [
-
   {
     name: "DeGame",
     desc: "DeGame is a leading Web3 gaming aggregator and community engagement platform, \
@@ -127,7 +208,6 @@ export const SPONSORS_TWO = [
     },
   },
 
-
   {
     name: "GamePhylum",
     desc: "GamePhylum is a DAO-driven platform focused on game content creation and distribution,\
@@ -140,22 +220,6 @@ export const SPONSORS_TWO = [
   },
 
 
-  {
-    name: "MarrowDAO | Guild W",
-    desc: "Guild W is the first on-chain e-sports team, incubated by MarrowDAO.\
-     The main members are Solidity developers, node operators,\
-     blockchain game players and investment analysts. All of them are loyal players of the Dark Forest.\
-    Guild W believes in the future of native blockchain games and in the power of technology.\
-    We are building a professional e-sports team with both software developers and game players.",
-    logo: "/images/logo/MarrowDAO.png",
-    color: "#fff",
-    handleClick: () => {
-      window.open("https://twitter.com/marrowdao");
-    },
-  },
-
-
- 
 
   {
     name: "OrdenGG",
@@ -177,20 +241,7 @@ export const SPONSORS_TWO = [
     },
   },
 
-  {
-    name: "277DAO",
-    desc: "We, 277 DAO, are a Chinese community that provides technical support, strategy sharing and NFT rewards for blockchain game players.\
-    In order to make players enjoy blockchain game better, we will often organize community rounds with great rewards for you to win.\
-    We look forward to your joining us!",
-    logo: "/images/logo/277DAO.png",
-    color: "#c3c8d0",
-    handleClick: () => {
-      window.open("https://277dao.com/");
-    },
-  },
-  
-
-
+ 
   {
     name: "01a1",
     desc: "At 01a1, we're a dedicated metaverse studio,\
@@ -206,14 +257,14 @@ export const SPONSORS_TWO = [
 
   {
     name: "Weirdo Ghost Gang",
-    desc: "Weirdo Ghost Gang, affectionately known as \"Lil Ghost\",\
+    desc: 'Weirdo Ghost Gang, affectionately known as "Lil Ghost",\
     is a Web3 native IP incubated by ManesLAB. \
     Having a storied background in pioneering aesthetics,\
      a free-spirited community culture, and diverse development trajectories, \
      Weirdo Ghost Gang has captivated collectors, artists, and musicians worldwide.\
-      Embodying Web3's free, open, innovative, \
+      Embodying Web3\'s free, open, innovative, \
       and inclusive lifestyle, Weirdo Ghost Gang amplifies creative content and operations to inspire. \
-      Their unwavering essence is to \"OUTA THE BOX, BE A WEIRDO.\"",
+      Their unwavering essence is to "OUTA THE BOX, BE A WEIRDO."',
     logo: "/images/logo/WeirdoGhostGang.png",
     color: "#fff",
     handleClick: () => {
@@ -221,7 +272,6 @@ export const SPONSORS_TWO = [
     },
   },
 
-  
   {
     name: "Briq",
     desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
@@ -242,8 +292,7 @@ export const SPONSORS_TWO = [
     handleClick: () => {
       window.open("https://seedao.xyz/");
     },
-  }, 
-
+  },
 
   {
     name: "NetherScape",
@@ -253,8 +302,7 @@ export const SPONSORS_TWO = [
     handleClick: () => {
       window.open("https://twitter.com/netherscape_xyz");
     },
-  },   
-
+  },
 
   {
     name: "TownStory Galaxy",
@@ -266,7 +314,7 @@ export const SPONSORS_TWO = [
     handleClick: () => {
       window.open("https://townstory.io/");
     },
-  },   
+  },
 
   {
     name: "AW House",
@@ -276,10 +324,7 @@ export const SPONSORS_TWO = [
     handleClick: () => {
       window.open("https://twitter.com/AW_house");
     },
-  }, 
-
-
-
+  },
 ];
 export const SPONSORS_THREE = [
   {
@@ -290,7 +335,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/BlockBeatsAsia");
     },
-  }, 
+  },
   {
     name: "Cointime",
     desc: "Crypto News, We Are Fast!",
@@ -299,8 +344,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/Cointime_global");
     },
-  }, 
-
+  },
 
   {
     name: "ChainCatcher",
@@ -313,8 +357,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://www.chaincatcher.com/");
     },
-  }, 
-  
+  },
 
   {
     name: "ForesightNews",
@@ -325,7 +368,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/Foresight_News");
     },
-  }, 
+  },
 
   {
     name: "DAppChaser",
@@ -335,7 +378,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/dappchaser");
     },
-  }, 
+  },
   {
     name: "Matrix World",
     desc: "Matrix World is an open world that enables users to build 3D immersive applications on top of several blockchains. \
@@ -347,9 +390,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://matrixworld.org/home");
     },
-  }, 
-
-
+  },
 
   {
     name: "Paladins DAO",
@@ -360,8 +401,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/paladinsdao");
     },
-  }, 
-
+  },
 
   {
     name: "UpchainDAO",
@@ -371,8 +411,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://learnblockchain.cn/");
     },
-  }, 
-
+  },
 
   {
     name: "LXDAO",
@@ -384,8 +423,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://lxdao.io/");
     },
-  }, 
-
+  },
 
   {
     name: " Crypto Chasers",
@@ -398,7 +436,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("http://cryptochasers.co");
     },
-  }, 
+  },
 
   {
     name: "AW Research",
@@ -410,8 +448,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("http://cryptochasers.co");
     },
-  }, 
-
+  },
 
   {
     name: "BlockPi",
@@ -424,8 +461,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://blockpi.io/");
     },
-  }, 
-
+  },
 
   {
     name: "WhalerDAO",
@@ -436,11 +472,11 @@ export const SPONSORS_THREE = [
     logo: "/images/logo/WhalerDAO.png",
     color: " #fff",
     handleClick: () => {
-      window.open("https://www.notion.so/Whaler-DAO-c32aaa836f9943919b24614ec3a4aea0");
+      window.open(
+        "https://www.notion.so/Whaler-DAO-c32aaa836f9943919b24614ec3a4aea0"
+      );
     },
-  }, 
-
-
+  },
 
   {
     name: "Gametaverse",
@@ -452,21 +488,19 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/GametaverseDAO");
     },
-  }, 
-
-
+  },
 
   {
     name: "BuidlerDAO",
-    desc: "\"Move over hodl, it's time to buidl!\" \
+    desc: '"Move over hodl, it\'s time to buidl!" \
     Buidler DAO gathers Web3 doers in research, technology, operations and other fields, \
-    establishes a Web3 talent network and project accelerator; builds SocialDAO governance paradigm and DAO tools solution with its own practice.",
+    establishes a Web3 talent network and project accelerator; builds SocialDAO governance paradigm and DAO tools solution with its own practice.',
     logo: "/images/logo/BuidlerDAO.png",
     color: " #00f38a",
     handleClick: () => {
       window.open("https://www.buidlerdao.xyz/");
     },
-  }, 
+  },
 
   {
     name: "THUBA",
@@ -476,7 +510,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/THUBA_DAO");
     },
-  }, 
+  },
 
   {
     name: "NJUBA",
@@ -489,7 +523,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("");
     },
-  }, 
+  },
   {
     name: "RUChain",
     desc: "RUChain is a student club formed spontaneously \
@@ -501,7 +535,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/ruchain_");
     },
-  }, 
+  },
 
   {
     name: "SIEA",
@@ -513,7 +547,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("");
     },
-  }, 
+  },
 
   {
     name: "PTADAO",
@@ -524,9 +558,11 @@ export const SPONSORS_THREE = [
     logo: "/images/logo/PTADAO.svg",
     color: " #cd5c5c",
     handleClick: () => {
-      window.open("https://twitter.com/BallyballNFT/status/1641790570204102657");
+      window.open(
+        "https://twitter.com/BallyballNFT/status/1641790570204102657"
+      );
     },
-  }, 
+  },
 
   {
     name: "ZJUBCA",
@@ -538,8 +574,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/zjubca");
     },
-  }, 
-
+  },
 
   {
     name: "Cellula",
@@ -554,8 +589,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://cellula.life/");
     },
-  }, 
-
+  },
 
   {
     name: "WTF Academy",
@@ -565,7 +599,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/WTFAcademy_");
     },
-  }, 
+  },
 
   {
     name: "Dapp-Learning",
@@ -579,7 +613,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/Dapp_Learning");
     },
-  }, 
+  },
   {
     name: "FFG DAO",
     desc: "Platform for onchain cryptoeconomic games",
@@ -588,8 +622,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("hhttps://twitter.com/FFG_DAO");
     },
-  }, 
-
+  },
 
   {
     name: "Rooch",
@@ -599,8 +632,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/RoochNetwork");
     },
-  }, 
-
+  },
 
   {
     name: "ggQuest",
@@ -611,8 +643,7 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://twitter.com/gg_Quest_gg");
     },
-  }, 
-
+  },
 
   {
     name: "CryptoChasers Robot",
@@ -625,56 +656,20 @@ export const SPONSORS_THREE = [
     handleClick: () => {
       window.open("https://robot.cryptochasers.co/");
     },
-  }, 
-
+  },
 ];
 
+export const SPONSORS_FOUR = [];
 
-
-
-export const SPONSORS_FOUR = [
-  
- 
-];
-
-
-
-export const GOD = {
-  name: "God",
-  desc: "Go Fuck Yourself",
-  logo: "data:image/png;base64,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",
-  color: "#cd5c5c",
-  handleClick: () => {},
-};
 export const CONTRIBUTORS = [
   {
     name: "Tatokoro",
     avatar: "/images/tatokoro.png",
-    twitter: "https://twitter.com/lidangzzz",
-  },
-  {
-    name: "Tatokoro1",
-    avatar: "/images/tatokoro.png",
-    twitter: "https://twitter.com/lidangzzz",
-  },
-  {
-    name: "Tatokoro2",
-    avatar: "/images/tatokoro.png",
-    twitter: "https://twitter.com/lidangzzz",
-  },
-  {
-    name: "Tatokoro3",
-    avatar: "/images/tatokoro.png",
-    twitter: "https://twitter.com/lidangzzz",
-  },
-  {
-    name: "Tatokoro4",
-    avatar: "/images/tatokoro.png",
-    twitter: "https://twitter.com/lidangzzz",
+    twitter: "",
   },
 ];
 
 export const PanelContext = createContext<{
-  sponsor: typeof DAD;
-  setSponsor: (sponsor: typeof DAD) => void;
-}>({ sponsor: DAD, setSponsor: () => {} });
+  sponsor: typeof DARKFOREST;
+  setSponsor: (sponsor: typeof DARKFOREST) => void;
+}>({ sponsor: DARKFOREST, setSponsor: () => {} });

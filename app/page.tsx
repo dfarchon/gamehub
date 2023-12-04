@@ -3,10 +3,12 @@ import BgCarousel from "@/components/BgCarousel";
 import Overlay from "@/components/Overlay";
 import { Suspense, createContext, useState } from "react";
 import { useProgress } from "@react-three/drei";
-import { PanelContext, GOD, DAD } from "@/constants";
+
+
+import { PanelContext,  DARKFOREST} from "@/constants";
 
 export default function Home() {
-  const [sponsor, setSponsor] = useState(DAD); //GOD
+  const [sponsor, setSponsor] = useState(DARKFOREST); 
 
   return (
     <main className="h-screen w-screen overflow-hidden">

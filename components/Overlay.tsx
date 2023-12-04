@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState, useContext } from "react";
 import Contributors from "./Contributors";
 import LogoDetail from "./LogoDetai";
 
-import { PanelContext, GOD } from "@/constants";
+import { PanelContext, DARKFOREST,GOD } from "@/constants";
 import "animate.css";
 
 export default function Overlay({ ...props }: {}) {
@@ -45,18 +45,18 @@ export default function Overlay({ ...props }: {}) {
           color: sponsor.color ?? "#cd5c5c",
         }}
       >
-        DF ARES V0.1
-        <br />
-        ROUND 1
 
+        {'DON\'T WORRY about gas fees'}
         <br />
-
         <br />
 
-        Dark Forest
-        <br/>
-          
-        Community Round
+        {'DON\'T WORRY  about making money'}
+        <br />
+        <br />
+               
+        LIVING IN THE FUTURE
+
+        
       </div>
       
       <div
@@ -65,20 +65,21 @@ export default function Overlay({ ...props }: {}) {
           color: sponsor.color ?? "#cd5c5c",
         }}
       >
-         <a href="https://discord.gg/f3FrFA4T25" target="_blank">
-          DISCORD
-        </a>
-        <br />
-
-        <a href="https://twitter.com/DFArchon" target="_blank">
+         <a href={sponsor.twitter?? ""} target="_blank">
           TWITTER
         </a>
         <br />
-      
-        <a href="https://github.com/dfarchon" target="_blank">
+        <br />
+
+        <a href={sponsor.discord?? ""} target="_blank">
+          DISCORD
+        </a>
+        <br />
+        <br />
+        <a href={sponsor.github??""} target="_blank">
           GITHUB
         </a>
-
+        <br />
         <br />
 
         
@@ -97,9 +98,9 @@ export default function Overlay({ ...props }: {}) {
       >
         {/* <h1>{planets}</h1> */}
         <h1> 1024</h1>
-        <h2>Planets Conquered</h2>
 
-      
+        <h2 style={{fontSize:"80px"}}> Autonomous</h2>
+        <h1>  Worlds </h1>
       </div>
       <div
         className="overlay lowerRight transition-all duration-500 ease-in-out  z-30"

@@ -1,7 +1,7 @@
 import { PanelContext } from "@/constants";
 import Information from "@/public/images/information.svg";
 import React, { useContext, useEffect, useState } from "react";
-import { GOD } from "@/constants";
+import { GOD,DARKFOREST } from "@/constants";
 
 export default function LogoDetail({
   setActive,
