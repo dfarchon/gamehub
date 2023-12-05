@@ -375,7 +375,8 @@ export const WORLDS_THTEE = [
     discord:'',
     github:'https://github.com/Generative-Labs',
     blog:'',
-    color: "#9A26F9",
+    color:'white',
+    // color: "#9A26F9",
     handleClick: () => {
       window.open("//web3mq.com/");
     },
