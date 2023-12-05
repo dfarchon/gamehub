@@ -37,7 +37,7 @@ export default function Home() {
 
 const Loader = () => {
   const { active, progress, errors, item, loaded, total } = useProgress();
-  console.log(active, progress, loaded, total);
+  // console.log(active, progress, loaded, total);
   return (
     <div className="bg-[#212121]  flex w-full h-full">
       <div className="loader mx-auto my-auto">
