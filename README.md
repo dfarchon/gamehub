@@ -1,12 +1,12 @@
-# Automonous Worlds Door
+# Autonomous Worlds Door
 
-Enter **Automonous Worlds** through **Automonous Worlds Door**.
+Enter **Autonomous Worlds** through **Autonomous Worlds Door**.
 
 https://awdoor.vercel.app/
 
 
 
-We maintain a list that facilitates players & developers access to Automonous Worlds  & Fully On-Chain Games.
+We maintain a list that facilitates players & developers access to Autonomous Worlds  & Fully On-Chain Games.
 
 
 
@@ -20,7 +20,7 @@ The list is still being compiled, welcome to stay tuned.
 
 ### The basic rules
 
-1. Active projects/guilds related to Automounous Worlds.
+1. Active projects/guilds related to Autonomous Worlds.
 2. Projects should have demo or GitHub repo.
 3. Guilds should build some projects on Github or publish some tools for players to use.
 
