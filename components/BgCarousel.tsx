@@ -15,7 +15,7 @@ import { Float, Line, Sphere, Stars, useTexture } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
-import { DARKFOREST,SPONSORS_ONE,SPONSORS_TWO, SPONSORS_THREE, SPONSORS_FOUR, PanelContext } from "@/constants";
+import { DARKFOREST,WORLDS_ONE,WORLDS_TWO, WORLDS_THTEE, SPONSORS_FOUR, PanelContext } from "@/constants";
 
 const colors = [
   "black",
@@ -24,12 +24,13 @@ const colors = [
   "aquamarine",
   "blueviolet",
   "midnightblue",
+  "pink"
 ];
 
 extend({ OrbitControls });
 
 export default function BgCarousel(props: any) {
-  const [bgColor, setBgColor] = useState(colors[5]);
+  const [bgColor, setBgColor] = useState(colors[6]);
 
   useEffect(() => {}, []);
 
@@ -50,18 +51,18 @@ export default function BgCarousel(props: any) {
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
      
           {/* <Curves /> */}
-          <Logo
+          {/* <Logo
             position={[0, 0, 0.1]}
             speed={2}
             radius={0.5}
             data={DARKFOREST}
             scale={2}
             handleClick={DARKFOREST.handleClick}
-          />
+          /> */}
 
-        <PlanetsOne datas ={SPONSORS_ONE} />
-        <PlanetsTwo datas={SPONSORS_TWO} />
-        <PlanetsThree datas={SPONSORS_THREE} />
+        <PlanetsOne datas ={WORLDS_ONE} />
+        <PlanetsTwo datas={WORLDS_TWO} />
+        <PlanetsThree datas={WORLDS_THTEE} />
         <PlanetsFour datas={SPONSORS_FOUR} />
       
         </Float>
@@ -311,7 +312,7 @@ function Logo({
   position: [number, number, number];
   scale: number;
 }) {
-  const { setSponsor } = useContext(PanelContext);
+  const { setWorld } = useContext(PanelContext);
   const [active, setActive] = useState(false);
   const { scaleAni } = useSpring({
     scaleAni: active ? scale * 1.25 : scale,
@@ -320,7 +321,7 @@ function Logo({
   const handleToggle = useCallback(() => {
     document.body.style.cursor = !active ? "pointer" : "auto";
     setActive(!active);
-    setSponsor(data);
+    setWorld(data);
   }, [active]);
   const logoTexture = useTexture(data.logo);
 

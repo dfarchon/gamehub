@@ -8,16 +8,16 @@ import { useProgress } from "@react-three/drei";
 import { PanelContext,  DARKFOREST} from "@/constants";
 
 export default function Home() {
-  const [sponsor, setSponsor] = useState(DARKFOREST); 
+  const [world, setWorld] = useState(DARKFOREST); 
 
   return (
     <main className="h-screen w-screen overflow-hidden">
       <Suspense fallback={<Loader />}>
         <PanelContext.Provider
           value={{
-            sponsor,
-            setSponsor: (data) => {
-              setSponsor(data);
+            world,
+            setWorld: (data) => {
+              setWorld(data);
               // setActive();
             },
           }}

@@ -8,16 +8,16 @@ import "animate.css";
 
 export default function Overlay({ ...props }: {}) {
   const planets = 316;
-  const { sponsor } = useContext(PanelContext);
+  const { world } = useContext(PanelContext);
 
-  const [active, setActive] = useState(sponsor !== GOD);
+  const [active, setActive] = useState(world !== GOD);
   const [activeContributors, setActiveContributors] = useState(false);
   const ref = useRef(null!);
 
   useEffect(() => {
-    setActive(sponsor !== GOD);
+    setActive(world !== GOD);
     setActiveContributors(false);
-  }, [sponsor]);
+  }, [world]);
 
   const handleClickOutside = (e: any) => {
     //@ts-ignore
@@ -42,7 +42,7 @@ export default function Overlay({ ...props }: {}) {
       <div
         className="overlay upperLeft transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster"
         style={{
-          color: sponsor.color ?? "#cd5c5c",
+          color: world.color ?? "#cd5c5c",
         }}
       >
 
@@ -62,25 +62,50 @@ export default function Overlay({ ...props }: {}) {
       <div
         className="overlay upperRight transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster z-50"
         style={{
-          color: sponsor.color ?? "#cd5c5c",
+          color: world.color ?? "#cd5c5c",
         }}
       >
-         <a href={sponsor.twitter?? ""} target="_blank">
-          TWITTER
-        </a>
-        <br />
-        <br />
 
-        <a href={sponsor.discord?? ""} target="_blank">
-          DISCORD
-        </a>
-        <br />
-        <br />
-        <a href={sponsor.github??""} target="_blank">
-          GITHUB
-        </a>
-        <br />
-        <br />
+          {
+          world.twitter!==''? 
+            <div> <a href={world.twitter?? ""} target="_blank">
+              TWITTER
+              </a>
+              <br />
+             <br /></div>:<div></div>
+          }
+
+
+          {
+          world.discord!==''? 
+            <div> <a href={world.discord?? ""} target="_blank">
+              DISCORD
+              </a>
+              <br />
+             <br /></div>:<div></div>
+          }
+
+          {
+          world.github!==''? 
+            <div> <a href={world.github?? ""} target="_blank">
+              GITHUB
+              </a>
+              <br />
+             <br /></div>:<div></div>
+          }
+   
+   
+       
+          {
+          world.blog!==''? 
+            <div> <a href={world.blog?? ""} target="_blank">
+              BLOG
+              </a>
+              <br />
+             <br /></div>:<div></div>
+          }
+     
+      
 
         
 
@@ -93,11 +118,11 @@ export default function Overlay({ ...props }: {}) {
       <div
         className="overlay lowerLeft transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster"
         style={{
-          color: sponsor.color ?? "#cd5c5c",
+          color: world.color ?? "#cd5c5c",
         }}
       >
         {/* <h1>{planets}</h1> */}
-        <h1> 1024</h1>
+        <h1> Building </h1>
 
         <h2 style={{fontSize:"80px"}}> Autonomous</h2>
         <h1>  Worlds </h1>

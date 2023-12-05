@@ -3,6 +3,8 @@ import Information from "@/public/images/information.svg";
 import React, { useContext, useEffect, useState } from "react";
 import { GOD,DARKFOREST } from "@/constants";
 
+
+
 export default function LogoDetail({
   setActive,
   active = false,
@@ -12,8 +14,8 @@ export default function LogoDetail({
   active?: boolean;
 }) {
   // const ref = useRef(null!);
-  const { sponsor } = useContext(PanelContext);
-  const { name, logo, desc, color, handleClick } = sponsor;
+  const {world} = useContext(PanelContext);
+  const { name, logo, desc, color, handleClick } = world;
 
   return active ? (
     <div
@@ -31,8 +33,9 @@ export default function LogoDetail({
         <div className="my-auto grow text-3xl mx-3 hyphens-manual">{name}</div>
       </div>
       <div
-        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal hyphens-manual mb-4"
+        className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal hyphens-manual mb-4 whitespace-pre-line"
         // style={{ minHeight: (desc?.length / 24) * 20 + 50 }}
+        
       >
         {/* <TextFromRandomLetters text={desc} speed={1} /> */}
         {desc}
@@ -56,7 +59,7 @@ export default function LogoDetail({
       width="96"
       height="96"
       className="animate__animated animate__zoomIn"
-      onMouseOver={() => sponsor !== GOD && setActive(true)}
+      onMouseOver={() => world !== GOD && setActive(true)}
       style={{ backgroundColor: "midnightblue" }}
     />
   );
