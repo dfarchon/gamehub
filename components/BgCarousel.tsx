@@ -30,7 +30,7 @@ const colors = [
 extend({ OrbitControls });
 
 export default function BgCarousel(props: any) {
-  const [bgColor, setBgColor] = useState(colors[6]);
+  const [bgColor, setBgColor] = useState(colors[4]);
 
   useEffect(() => {}, []);
 
@@ -68,14 +68,14 @@ export default function BgCarousel(props: any) {
         </Float>
 
         <Stars
-          count={2000}
+          count={5000}
           speed={0.9}
           radius={50}
           depth={10}
           factor={3}
           fade
         />
-        <SunWithMoon position={[-130, 50, -120]} speed={0.2} radius={3.6} />
+        <SunWithMoon position={[-130, 30, -120]} speed={0.2} radius={3.6} />
 
         <EffectComposer>
           <Bloom mipmapBlur luminanceThreshold={1} intensity={1} />

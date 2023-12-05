@@ -121,9 +121,7 @@ export const WORLDS_THTEE = [
     name: "MarrowDAO | Guild W",
     desc: "Guild W is the first on-chain e-sports team, incubated by MarrowDAO. \n \
      The main members are Solidity developers, node operators, \n \
-     blockchain game players and investment analysts. All of them are loyal players of the Dark Forest. \n \
-     Guild W believes in the future of native blockchain games and in the power of technology. \n \
-     We are building a professional e-sports team with both software developers and game players.",
+     blockchain game players and investment analysts. All of them are loyal players of the Dark Forest.",
     logo: "/images/worldlogo/MarrowDAO.png",
     twitter: "https://twitter.com/marrowdao",
     discord: "",
@@ -382,22 +380,71 @@ export const WORLDS_THTEE = [
       window.open("//web3mq.com/");
     },
   },
- 
 
-  
- 
-];
-
-export const WORLDS_FOUR =[
   {
     name: "AW House",
     desc: "AW house is an Ecosystem for Autonomous World builders.",
     logo: "/images/logo/AWHouse.png",
+    twitter:'https://twitter.com/AW_house',
+    github:'',
+    discord:'',
+    blog:'',
     color: "#fff",
     handleClick: () => {
-      window.open("https://twitter.com/AW_house");
+      window.open("https://aw.house/");
     },
   },
+
+
+  {
+    name: "Briq",
+    desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
+    logo: "/images/logo/Briq.png",
+    twitter:"",
+    github:'',
+    discord:'',
+    blog:'',
+    color: "#f35601",
+    handleClick: () => {
+      window.open("https://twitter.com/briqNFT");
+    },
+  },
+
+
+  {
+    name: "Cellula",
+    desc: "Cellula is a fully on-chain artificial life simulation game. \n \
+     Players explore, cultivate, evolve, and collect unique Life forms in the game. \n \
+    ",
+    logo: "/images/logo/Cellula.png",
+    twitter:"",
+    github:'',
+    discord:'',
+    blog:'',
+    color: " #03feda",
+    handleClick: () => {
+      window.open("https://cellula.life/");
+    },
+  },
+
+  {
+    name: "World Explorers",
+    desc: "Player community and guild focused on exploring fully onchain games and Autonomous Worlds. \n \
+    We're currently the reigning world champions for SkyStrife.",
+    logo: "/images/worldlogo/AWExplorers.png",
+    twitter:"https://twitter.com/awexplorers",
+    github:'',
+    discord:'',
+    blog:'',
+    color: "white",
+    handleClick: () => {
+      window.open("https://twitter.com/awexplorers");
+    },
+  },
+
+];
+
+export const WORLDS_FOUR =[
 
 
   {
@@ -410,21 +457,6 @@ export const WORLDS_FOUR =[
       window.open("https://twitter.com/FunBlocksFun");
     },
   }, 
-
-  {
-    name: "Briq",
-    desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
-    logo: "/images/logo/Briq.png",
-    color: "#f35601",
-    handleClick: () => {
-      window.open("https://twitter.com/briqNFT");
-    },
-  },
-
-
-
-
-  
 
 
   {
@@ -446,20 +478,6 @@ export const WORLDS_FOUR =[
 
 
 
-  {
-    name: "Cellula",
-    desc: "Cellula is a fully on-chain artificial life simulation game.\
-     Players explore, cultivate, evolve, and collect unique Life forms in the game.\
-    In this game, the rules of Conway's Game of Life are considered the genetic\
-     code of the Life forms, determining their forms and vitality.\
-      Using the game's crafting table, players can freely create a variety of genetic sequences \
-      and give birth to their own on-chain Life forms. These Life forms have unique appearances and properties, and exhibit diverse life forms.",
-    logo: "/images/logo/Cellula.png",
-    color: " #03feda",
-    handleClick: () => {
-      window.open("https://cellula.life/");
-    },
-  },
 
   {
     name: "ggQuest",

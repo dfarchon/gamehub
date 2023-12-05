@@ -1,3 +1,57 @@
+# Automonous Worlds Door
+
+Enter **Automonous Worlds** through **Automonous Worlds Door**.
+
+https://awdoor.vercel.app/
+
+
+
+We maintain a list that facilitates players & developers access to Automonous Worlds  & Fully On-Chain Games.
+
+
+
+The information we organize may be incomplete or outdated, welcome to pull a request to maintain this list in community way.
+
+
+
+The list is still being compiled, welcome to stay tuned.
+
+
+
+### The basic rules
+
+1. Active projects/guilds related to Automounous Worlds.
+2. Projects should have demo or GitHub repo.
+3. Guilds should build some projects on Github or publish some tools for players to use.
+
+
+
+If you want to add your projects & teams info, please feel free to pull a request, we will respond as soon as possible. 
+
+We reserve the right to add your projects/guilds to our list or not.
+
+ Welcome to maintain your own listings using our code as a template, we'd love to help.
+
+
+
+### How To Add Info 
+
+open constants/index.tsx to add info,
+
+open public/images/worldlogo/ to add logo.
+
+
+
+## Todo List
+
+1. add more projects/guilds in mud & dojo ecosystems.
+2. modify the display style so that the logo appears in a random way.
+3. Add more docs  to make it easier for others to use the code as a template.
+
+
+
+# Previous log
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
