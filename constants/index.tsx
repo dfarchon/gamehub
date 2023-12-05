@@ -49,7 +49,7 @@ export const SPONSORS_ONE = [
     github: 'https://github.com/orden-gg',
     color: "#fff201",
     handleClick: () => {
-      window.open("https://twitter.com/orden_gg");
+      window.open("https://github.com/orden-gg");
     },
   },
 
@@ -122,7 +122,10 @@ export const SPONSORS_ONE = [
 
 
 
-  
+
+
+
+
 
   
 
@@ -156,16 +159,6 @@ export const SPONSORS_ONE = [
     },
   },
   {
-    name: "Mask Network",
-    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
-    logo: "/images/logo/Mask.svg",
-    color: "#1FB3FB",
-    handleClick: () => {
-      window.open("https://mask.io/");
-    },
-  },
-
-  {
     name: "Web3MQ",
     desc: "Message relay network for Web3 based on current test results,\
      offering a trustless and seamless interactive experience. \
@@ -180,6 +173,17 @@ export const SPONSORS_ONE = [
       window.open("//web3mq.com/");
     },
   },
+  {
+    name: "Mask Network",
+    desc: "Mask Network brings privacy and benefits from Web3 to social media like Facebook & Twitter - with an open-sourced browser extension.",
+    logo: "/images/logo/Mask.svg",
+    color: "#1FB3FB",
+    handleClick: () => {
+      window.open("https://mask.io/");
+    },
+  },
+
+  
 ];
 
 export const SPONSORS_TWO = [

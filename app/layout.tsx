@@ -6,8 +6,8 @@ const font = localFont({
 });
 
 export const metadata = {
-  title: "DF ARES",
-  description: "Dark Forest Community Rounds with Novel Game Mechanics Powered by DF Archon",
+  title: "Autonomous Worlds Door",
+  description: "Enter different autonomous worlds with the Autonomous World Door maintained by DF Archon",
 };
 
 export default function RootLayout({

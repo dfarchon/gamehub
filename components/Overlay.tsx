@@ -46,11 +46,11 @@ export default function Overlay({ ...props }: {}) {
         }}
       >
 
-        {'DON\'T WORRY about gas fees'}
+        {'DON\'T WORRY ABOUT GAS FEES'}
         <br />
         <br />
 
-        {'DON\'T WORRY  about making money'}
+        {'DON\'T WORRY ABOUT MAKING MONEY'}
         <br />
         <br />
                
