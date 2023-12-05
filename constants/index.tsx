@@ -443,6 +443,48 @@ export const WORLDS_THTEE = [
     },
   },
 
+  {
+    name: "Dojo",
+    desc: "Dojo is a provable game engine for Autonomous Worlds.",
+    logo: "/images/logo/Dojo.png",
+    twitter: "https://twitter.com/ohayo_dojo",
+    github: "https://github.com/dojoengine/dojo",
+    discord: "https://discord.gg/dojoengine",
+    blog: "",
+    color: "#FF2F42",
+    handleClick: () => {
+      window.open("https://dojoengine.org");
+    },
+  },
+
+  {
+    name: "Cartridge",
+    desc: "Cartridge builds games, tooling, and infrastructure for Autonomous Worlds.",
+    logo: "/images/logo/Cartridge.png",
+    twitter: "https://twitter.com/cartridge_gg",
+    github: "https://github.com/cartridge_gg",
+    discord: "https://discord.gg/cartridge",
+    blog: "",
+    color: "#FBCB4A",
+    handleClick: () => {
+      window.open("https://cartridge.gg");
+    },
+  },
+
+  {
+    name: "Dope Wars: Roll Your Own",
+    desc: "Fully onchain drug arbitrage games inspired by the cult classic Drug Wars.",
+    logo: "/images/logo/RYO.png",
+    twitter: "https://twitter.com/thedopewars",
+    github: "https://github.com/dopedao",
+    discord: "https://discord.gg/dopewars",
+    blog: "",
+    color: "#11ED83",
+    handleClick: () => {
+      window.open("https://rollyourown.preview.cartridge.gg/");
+    },
+  },
+
 ];
 
 export const WORLDS_FOUR =[
