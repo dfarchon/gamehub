@@ -159,6 +159,18 @@ body {
   }
 }
 
+.upperCenter {
+  top: 40px;
+  left: 850px;
+  font-size: 2em;
+  /* transform: skew(5deg, 5deg); */
+  pointer-events: all;
+  cursor: pointer;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.5em;
+  }
+}
+
 .upperRight{
   text-align: right;
   top: 40px;
@@ -208,6 +220,8 @@ body {
   }
   
 }
+
+
 
 
 .scanner span {

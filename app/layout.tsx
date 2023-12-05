@@ -7,7 +7,7 @@ const font = localFont({
 
 export const metadata = {
   title: "Autonomous Worlds Door",
-  description: "Enter different autonomous worlds with the Autonomous World Door maintained by DF Archon",
+  description: "Enter Automonous Worlds through Automonous Worlds Door. Maintained by DF Archon",
 };
 
 export default function RootLayout({

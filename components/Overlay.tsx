@@ -140,6 +140,13 @@ export default function Overlay({ ...props }: {}) {
           }}
         />
       </div>
+
+      <div className="overlay upperCenter transition-all duration-500 ease-in-out  z-30"  
+      style={{
+          color: world.color ?? "#cd5c5c",
+        }}><a href={"https://github.com/dfarchon/Autonomous-Worlds-Door"} target="_blank">
+        Keeping update...
+        </a> </div>
     </div>
   );
 }
