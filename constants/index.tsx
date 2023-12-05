@@ -295,7 +295,7 @@ export const WORLDS_THTEE = [
     blog: 'https://0xparc.org/blog/zk-hunt',
     color: "#fff",
     handleClick: () => {
-      window.open("https://network-states-smallbraingames.vercel.app/");
+      window.open("https://github.com/FlynnSC/zk-hunt");
     },
   },
 
@@ -313,7 +313,7 @@ export const WORLDS_THTEE = [
     github: '',
     color: "#fff",
     handleClick: () => {
-      window.open("https://www.words3.xyz/");
+      window.open("https://twitter.com/movingcastles_");
     },
   },
 
