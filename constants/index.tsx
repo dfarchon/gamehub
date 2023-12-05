@@ -89,7 +89,7 @@ export const WORLDS_THTEE = [
     desc: " A SUPER COST-EFFECTIVE CHAIN FOR GAMES & WORLDS. \n\
     Redstone runs applications on an OP Stack chain optimized for games, autonomous worlds, and other ambitious onchain applications. \n\
     Built by Lattice. ",
-    logo: "/images/worldlogo/Redstone.png",
+    logo: "/images/worldlogo/redstone.png",
     twitter: 'https://twitter.com/redstonexyz',
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/mud',
