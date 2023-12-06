@@ -435,7 +435,7 @@ export const WORLDS_THTEE = [
     logo: "/images/worldlogo/AWExplorers.png",
     twitter:"https://twitter.com/awexplorers",
     github:'',
-    discord:'',
+    discord:'discord.worlds.online',
     blog:'',
     color: "white",
     handleClick: () => {
