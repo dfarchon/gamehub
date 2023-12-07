@@ -498,6 +498,31 @@ export const WORLDS_THTEE = [
       window.open("https://github.com/HelheimLabs/");
     }
   },
+
+  {
+    name: "AltLayer",
+    desc: "Decentralized & Elastic Rollups-as-a-Service Protocol.\
+    Backed by \
+    @balajis\
+    @polychaincap\
+    @hjmomtazi\
+    @jump_\
+    @gavofyork\
+    @kaiynne\
+    @tekinsalimi\
+    @twobitidiot",
+    logo: "/images/worldlogo/AltLayer.png",
+    twitter: "https://twitter.com/alt_layer",
+    github: '',
+    discord: 'https://discord.com/invite/altlayer',
+    blog: 'https://blog.altlayer.io/?gi=fbf9289d7d63',
+
+    color: "#787ab4",
+    handleClick: () => {
+      window.open("https://altlayer.io/");
+    },
+  },
+
 ];
 
 export const WORLDS_FOUR = [
