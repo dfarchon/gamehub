@@ -5,10 +5,12 @@ import { Suspense, createContext, useState } from "react";
 import { useProgress } from "@react-three/drei";
 
 
-import { PanelContext,  DARKFOREST} from "@/constants";
+import { PanelContext, DARKFOREST } from "@/constants";
 
 export default function Home() {
-  const [world, setWorld] = useState(DARKFOREST); 
+  const [world, setWorld] = useState(DARKFOREST);
+  const [hoverPlanet, setHoverPlanet] = useState(false);
+  const [globalTime, setGlobalTime] = useState(0);
 
   return (
     <main className="h-screen w-screen overflow-hidden">
@@ -20,6 +22,14 @@ export default function Home() {
               setWorld(data);
               // setActive();
             },
+            hoverPlanet,
+            setHoverPlanet: (status) => {
+              setHoverPlanet(status);
+            },
+            globalTime,
+            setGlobalTime: (time) => {
+              setGlobalTime(time);
+            }
           }}
         >
           <BgCarousel />

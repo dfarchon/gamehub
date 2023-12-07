@@ -15,7 +15,7 @@ import { Float, Line, Sphere, Stars, useTexture } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
-import { DARKFOREST,WORLDS_ONE,WORLDS_TWO, WORLDS_THTEE, SPONSORS_FOUR, PanelContext } from "@/constants";
+import { DARKFOREST, WORLDS_ONE, WORLDS_TWO, WORLDS_THTEE, SPONSORS_FOUR, PanelContext } from "@/constants";
 
 const colors = [
   "black",
@@ -32,7 +32,7 @@ extend({ OrbitControls });
 export default function BgCarousel(props: any) {
   const [bgColor, setBgColor] = useState(colors[4]);
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return (
     <div className="slider flex">
@@ -49,7 +49,7 @@ export default function BgCarousel(props: any) {
         <ambientLight intensity={0.25} />
 
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
-     
+
           {/* <Curves /> */}
           {/* <Logo
             position={[0, 0, 0.1]}
@@ -60,11 +60,11 @@ export default function BgCarousel(props: any) {
             handleClick={DARKFOREST.handleClick}
           /> */}
 
-        <PlanetsOne datas ={WORLDS_ONE} />
-        <PlanetsTwo datas={WORLDS_TWO} />
-        <PlanetsThree datas={WORLDS_THTEE} />
-        <PlanetsFour datas={SPONSORS_FOUR} />
-      
+          <PlanetsOne datas={WORLDS_ONE} />
+          <PlanetsTwo datas={WORLDS_TWO} />
+          <PlanetsThree datas={WORLDS_THTEE} />
+          <PlanetsFour datas={SPONSORS_FOUR} />
+
         </Float>
 
         <Stars
@@ -95,16 +95,16 @@ const CameraController = () => {
     controls.maxDistance = 14;
     // controls.maxPolarAngle = Math.PI / 1.8;
     // controls.minPolarAngle = Math.PI / 2.5;
-   
+
     // controls.maxAzimuthAngle = Math.PI / 9;
     // controls.minAzimuthAngle = -Math.PI / 9;
 
-    controls.maxPolarAngle = Math.PI ;
-    controls.minPolarAngle = - Math.PI ;
+    controls.maxPolarAngle = Math.PI;
+    controls.minPolarAngle = - Math.PI;
 
 
-    controls.maxAzimuthAngle = Math.PI ;
-    controls.minAzimuthAngle = - Math.PI ;
+    controls.maxAzimuthAngle = Math.PI;
+    controls.minAzimuthAngle = - Math.PI;
 
     return () => {
       controls.dispose();
@@ -180,9 +180,9 @@ function Curves(props: any) {
         points={pointsEllipse}
         color="#e2e2e2"
         lineWidth={0.05}
-        // dashed
-        // dashSize={0.6}
-        // dashScale={3}
+      // dashed
+      // dashSize={0.6}
+      // dashScale={3}
       />
       <Line
         worldUnits
@@ -265,7 +265,24 @@ function PlanetsTwo({ datas, ...props }: { datas: any }) {
 
 function PlanetsThree({ datas, ...props }: { datas: any }) {
 
-  return datas.map((data: any, index: number) => {
+  const ref = useRef<THREE.Group>(null!);
+  const { hoverPlanet, globalTime, setGlobalTime } = useContext(PanelContext);
+  useFrame((state) => {
+    if (!hoverPlanet) {
+      if (!state.clock.running) {
+        state.clock.start();
+      }
+      const t = state.clock.getElapsedTime();
+      const angleDelta = 0.1 * Math.PI * t;
+      ref.current.rotation.set(0, 0, globalTime + angleDelta);
+    } else {
+      setGlobalTime(ref.current.rotation.z);
+      state.clock.stop();
+    }
+
+  });
+
+  return (<group ref={ref} rotation={[0, 0, 0]} > {datas.map((data: any, index: number) => {
     return (
       <Logo
         key={index}
@@ -281,28 +298,31 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
         handleClick={data.handleClick}
       />
     );
-  });
+  })}
+  </group>)
 }
 function PlanetsFour({ datas, ...props }: { datas: any }) {
 
-
-  return datas.map((data: any, index: number) => {
-    return (
-      <Logo
-        key={index}
-        position={[
-          Math.sin((2 * Math.PI * index) / datas.length) * 10 ,
-          Math.cos((2 * Math.PI * index) / datas.length) * 10,
-          0.1,
-        ]}
-        speed={2}
-        radius={1}
-        data={data}
-        scale={1}
-        handleClick={data.handleClick}
-      />
-    );
-  });
+  const ref = useRef<THREE.Group>(null!);
+  return (<group ref={ref} rotation={[Math.PI / 6, 0, Math.PI / 2]} >
+    {datas.map((data: any, index: number) => {
+      return (
+        <Logo
+          key={index}
+          position={[
+            Math.sin((2 * Math.PI * index) / datas.length) * 10,
+            Math.cos((2 * Math.PI * index) / datas.length) * 10,
+            0.1,
+          ]}
+          speed={2}
+          radius={1}
+          data={data}
+          scale={1}
+          handleClick={data.handleClick}
+        />
+      );
+    })}
+  </group>)
 }
 
 function Logo({
@@ -324,12 +344,12 @@ function Logo({
 }) {
 
   const ref = useRef<THREE.Mesh>(null!);
-  const { setWorld } = useContext(PanelContext);
+  const { setWorld, setHoverPlanet, hoverPlanet } = useContext(PanelContext);
   const [active, setActive] = useState(false);
   const { scaleAni } = useSpring({
     scaleAni: active ? scale * 1.25 : scale,
   });
-  
+
   // let firstTime = true;
   // useFrame((state) => {
   //   const t = state.clock.getElapsedTime()*0.0001;
@@ -339,7 +359,7 @@ function Logo({
 
   //   console.log(angleHude);
   //   console.log(currentValue);
-    
+
 
   //   let x =  currentValue.x;
   //   let y =  currentValue.y;
@@ -353,7 +373,7 @@ function Logo({
   //   const centerX = 0;
   //   const centerY = 0;
 
- 
+
   //   ref.current.children[0].position.set(
   //     x * Math.cos(angleHude) + y* Math.sin(angleHude),
   //     -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
@@ -362,18 +382,19 @@ function Logo({
   // });
 
 
- 
+
 
   const handleToggle = useCallback(() => {
     document.body.style.cursor = !active ? "pointer" : "auto";
     setActive(!active);
+    setHoverPlanet(!active);
     setWorld(data);
   }, [active]);
   const logoTexture = useTexture(data.logo);
 
   return (
-    <mesh ref= {ref} onClick={handleClick}>
-      <animated.sprite 
+    <mesh ref={ref} onClick={handleClick}>
+      <animated.sprite
         position={position}
         scale={scaleAni}
         onPointerEnter={handleToggle}

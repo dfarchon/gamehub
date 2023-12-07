@@ -36,18 +36,18 @@ export const GOD = {
   desc: "GM everyone",
   logo: "data:image/png;base64,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",
   color: "#cd5c5c",
-  handleClick: () => {},
+  handleClick: () => { },
 };
 
 export const WORLDS_ONE = [
-  
+
 
 ];
 
 export const WORLDS_TWO = [
-  
 
-  
+
+
 ];
 export const WORLDS_THTEE = [
 
@@ -76,7 +76,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/mud',
     blog: 'https://mud.dev/introduction',
-   
+
     color: "#ff7513",
     handleClick: () => {
       window.open("https://mud.dev");
@@ -94,7 +94,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/mud',
     blog: 'https://redstone.xyz/docs/what-is-redstone',
-  
+
     color: "red",
     handleClick: () => {
       window.open("https://redstone.xyz/");
@@ -153,7 +153,7 @@ export const WORLDS_THTEE = [
     },
   },
 
-  { 
+  {
     name: "Dark Forest ARES v0.1.1",
     desc: "Dark Forest ARES v0.1.1 is based on the code of Dark Forest v0.6.5, \
     exploring more fun MMORTS mechanics by adding magic artifacts. \n \
@@ -199,7 +199,7 @@ export const WORLDS_THTEE = [
     twitter: 'https://twitter.com/skystrifeHQ',
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/sky-strife-league',
-    blog:'https://lattice.xyz/blog',
+    blog: 'https://lattice.xyz/blog',
     color: "#c3c8d0",
     handleClick: () => {
       window.open("https://playtest.skystrife.xyz/");
@@ -359,7 +359,7 @@ export const WORLDS_THTEE = [
     twitter: 'https://twitter.com/0xsmallbrain',
     discord: 'https://discord.com/invite/nhpZ5Gsntk',
     github: 'https://github.com/smallbraingames/network-states-lite',
-    blog:'',
+    blog: '',
     color: "#fff",
     handleClick: () => {
       window.open("https://network-states-smallbraingames.vercel.app/");
@@ -372,10 +372,10 @@ export const WORLDS_THTEE = [
     The next-generation modular L3/appchain framework",
     logo: "/images/worldlogo/Web3mq.png",
     twitter: 'https://twitter.com/Web3MQ',
-    discord:'',
-    github:'https://github.com/Generative-Labs',
-    blog:'',
-    color:'white',
+    discord: '',
+    github: 'https://github.com/Generative-Labs',
+    blog: '',
+    color: 'white',
     // color: "#9A26F9",
     handleClick: () => {
       window.open("//web3mq.com/");
@@ -386,10 +386,10 @@ export const WORLDS_THTEE = [
     name: "AW House",
     desc: "AW house is an Ecosystem for Autonomous World builders.",
     logo: "/images/worldlogo/AWHouse.png",
-    twitter:'https://twitter.com/AW_house',
-    github:'',
-    discord:'',
-    blog:'',
+    twitter: 'https://twitter.com/AW_house',
+    github: '',
+    discord: '',
+    blog: '',
     color: "#fff",
     handleClick: () => {
       window.open("https://aw.house/");
@@ -401,10 +401,10 @@ export const WORLDS_THTEE = [
     name: "Briq",
     desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
     logo: "/images/worldlogo/Briq.png",
-    twitter:"https://twitter.com/briqNFT",
-    github:'',
-    discord:'',
-    blog:'',
+    twitter: "https://twitter.com/briqNFT",
+    github: '',
+    discord: '',
+    blog: '',
     color: "#f35601",
     handleClick: () => {
       window.open("https://twitter.com/briqNFT");
@@ -418,10 +418,10 @@ export const WORLDS_THTEE = [
      Players explore, cultivate, evolve, and collect unique Life forms in the game. \n \
     ",
     logo: "/images/worldlogo/Cellula.png",
-    twitter:"https://twitter.com/cellulalifegame",
-    github:'',
-    discord:'https://discord.com/invite/2PMU2NvDcm',
-    blog:'',
+    twitter: "https://twitter.com/cellulalifegame",
+    github: '',
+    discord: 'https://discord.com/invite/2PMU2NvDcm',
+    blog: '',
     color: " #03feda",
     handleClick: () => {
       window.open("https://cellula.life/");
@@ -433,10 +433,10 @@ export const WORLDS_THTEE = [
     desc: "Player community and guild focused on exploring fully onchain games and Autonomous Worlds. \n \
     We're currently the reigning world champions for SkyStrife.",
     logo: "/images/worldlogo/AWExplorers.png",
-    twitter:"https://twitter.com/awexplorers",
-    github:'',
-    discord:'http://discord.worlds.online/',
-    blog:'',
+    twitter: "https://twitter.com/awexplorers",
+    github: '',
+    discord: 'http://discord.worlds.online/',
+    blog: '',
     color: "white",
     handleClick: () => {
       window.open("https://twitter.com/awexplorers");
@@ -485,22 +485,22 @@ export const WORLDS_THTEE = [
 
     },
   },
-    {
+  {
     name: "Autochessia",
     desc: "Autochessia is a fully on chain auto chess game",
     logo: "/images/worldlogo/Autochessia.png",
-    twitter:"https://twitter.com/auto_chessia",
-    github:'https://github.com/HelheimLabs/',
-    discord:'https://discord.gg/PYzPq3vZFb',
-    blog:'',
+    twitter: "https://twitter.com/auto_chessia",
+    github: 'https://github.com/HelheimLabs/',
+    discord: 'https://discord.gg/PYzPq3vZFb',
+    blog: '',
     color: "white",
     handleClick: () => {
       window.open("https://github.com/HelheimLabs/");
-  }
-
+    }
+  },
 ];
 
-export const WORLDS_FOUR =[
+export const WORLDS_FOUR = [
 
 
   {
@@ -512,7 +512,7 @@ export const WORLDS_FOUR =[
     handleClick: () => {
       window.open("https://twitter.com/FunBlocksFun");
     },
-  }, 
+  },
 
 
   {
@@ -528,9 +528,9 @@ export const WORLDS_FOUR =[
   },
 
 
-  
 
- 
+
+
 
 
 
@@ -561,4 +561,8 @@ export const CONTRIBUTORS = [
 export const PanelContext = createContext<{
   world: typeof DARKFOREST;
   setWorld: (world: typeof DARKFOREST) => void;
-}>({ world: DARKFOREST, setWorld: () => {} });
+  hoverPlanet: boolean;
+  setHoverPlanet: (status: boolean) => void;
+  globalTime: number;
+  setGlobalTime: (time: number) => void;
+}>({ world: DARKFOREST, setWorld: () => { }, hoverPlanet: false, setHoverPlanet: () => { }, globalTime: 0, setGlobalTime: () => { } });
