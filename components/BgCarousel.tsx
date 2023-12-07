@@ -330,7 +330,8 @@ function Logo({
   useFrame((state) => {
     const t = state.clock.getElapsedTime()*0.0001;
     const angleHude = t;
-    const currentValue = ref.current.position;
+    console.log(ref.current.children[0].position);
+    const currentValue = ref.current.children[0].position;
 
     console.log(angleHude);
     console.log(currentValue);
@@ -349,8 +350,7 @@ function Logo({
     const centerY = 0;
 
  
-    
-    ref.current.position.set(
+    ref.current.children[0].position.set(
       x * Math.cos(angleHude) + y* Math.sin(angleHude),
       -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
       position[2]    
@@ -372,8 +372,8 @@ function Logo({
   const logoTexture = useTexture(data.logo);
 
   return (
-    <mesh  onClick={handleClick}>
-      <animated.sprite ref= {ref}
+    <mesh ref= {ref} onClick={handleClick}>
+      <animated.sprite 
         position={position}
         scale={scaleAni}
         onPointerEnter={handleToggle}
