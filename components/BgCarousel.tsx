@@ -48,6 +48,8 @@ export default function BgCarousel(props: any) {
         {/* <color attach="background" args={[colors[slide]]} /> */}
         <ambientLight intensity={0.25} />
 
+         <PlanetsThree datas={WORLDS_THTEE} />
+
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
 
           {/* <Curves /> */}
@@ -60,10 +62,10 @@ export default function BgCarousel(props: any) {
             handleClick={DARKFOREST.handleClick}
           /> */}
 
-          <PlanetsOne datas={WORLDS_ONE} />
+          {/* <PlanetsOne datas={WORLDS_ONE} />
           <PlanetsTwo datas={WORLDS_TWO} />
           <PlanetsThree datas={WORLDS_THTEE} />
-          <PlanetsFour datas={SPONSORS_FOUR} />
+          <PlanetsFour datas={SPONSORS_FOUR} /> */}
 
         </Float>
 
@@ -91,7 +93,7 @@ const CameraController = () => {
   useEffect(() => {
     const controls = new OrbitControls(camera, gl.domElement);
 
-    controls.minDistance = 12;
+    controls.minDistance = 14;
     controls.maxDistance = 14;
     // controls.maxPolarAngle = Math.PI / 1.8;
     // controls.minPolarAngle = Math.PI / 2.5;
@@ -350,46 +352,13 @@ function Logo({
     scaleAni: active ? scale * 1.25 : scale,
   });
 
-  // let firstTime = true;
-  // useFrame((state) => {
-  //   const t = state.clock.getElapsedTime()*0.0001;
-  //   const angleHude = active? 0 : t;
-  //   console.log(ref.current.children[0].position);
-  //   const currentValue = ref.current.children[0].position;
-
-  //   console.log(angleHude);
-  //   console.log(currentValue);
-
-
-  //   let x =  currentValue.x;
-  //   let y =  currentValue.y;
-
-  //   if(firstTime){
-  //     firstTime =false;
-  //     x= position[0];
-  //     y= position[1];
-  //   }
-
-  //   const centerX = 0;
-  //   const centerY = 0;
-
-
-  //   ref.current.children[0].position.set(
-  //     x * Math.cos(angleHude) + y* Math.sin(angleHude),
-  //     -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
-  //     position[2]    
-  //   );  
-  // });
-
-
-
-
   const handleToggle = useCallback(() => {
     document.body.style.cursor = !active ? "pointer" : "auto";
     setActive(!active);
     setHoverPlanet(!active);
     setWorld(data);
   }, [active]);
+
   const logoTexture = useTexture(data.logo);
 
   return (
