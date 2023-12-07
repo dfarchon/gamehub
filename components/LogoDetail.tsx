@@ -60,7 +60,7 @@ export default function LogoDetail({
       height="96"
       className="animate__animated animate__zoomIn"
       onMouseOver={() => world !== GOD && setActive(true)}
-      style={{ backgroundColor: "midnightblue" }}
+      style={{ backgroundColor:   "blueviolet"}}
     />
   );
 }

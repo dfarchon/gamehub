@@ -161,7 +161,8 @@ body {
 
 .upperCenter {
   top: 40px;
-  left: 850px;
+  left: 41.5%;
+  margin: auto;
   font-size: 2em;
   /* transform: skew(5deg, 5deg); */
   pointer-events: all;
