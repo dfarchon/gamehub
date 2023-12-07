@@ -324,45 +324,45 @@ function Logo({
 }) {
 
   const ref = useRef<THREE.Mesh>(null!);
-  
-  let firstTime = true;
-
-  useFrame((state) => {
-    const t = state.clock.getElapsedTime()*0.0001;
-    const angleHude = t;
-    console.log(ref.current.children[0].position);
-    const currentValue = ref.current.children[0].position;
-
-    console.log(angleHude);
-    console.log(currentValue);
-    
-
-    let x =  currentValue.x;
-    let y =  currentValue.y;
-
-    if(firstTime){
-      firstTime =false;
-      x= position[0];
-      y= position[1];
-    }
-
-    const centerX = 0;
-    const centerY = 0;
-
- 
-    ref.current.children[0].position.set(
-      x * Math.cos(angleHude) + y* Math.sin(angleHude),
-      -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
-      position[2]    
-    );  
-  });
-
-
   const { setWorld } = useContext(PanelContext);
   const [active, setActive] = useState(false);
   const { scaleAni } = useSpring({
     scaleAni: active ? scale * 1.25 : scale,
   });
+  
+  // let firstTime = true;
+  // useFrame((state) => {
+  //   const t = state.clock.getElapsedTime()*0.0001;
+  //   const angleHude = active? 0 : t;
+  //   console.log(ref.current.children[0].position);
+  //   const currentValue = ref.current.children[0].position;
+
+  //   console.log(angleHude);
+  //   console.log(currentValue);
+    
+
+  //   let x =  currentValue.x;
+  //   let y =  currentValue.y;
+
+  //   if(firstTime){
+  //     firstTime =false;
+  //     x= position[0];
+  //     y= position[1];
+  //   }
+
+  //   const centerX = 0;
+  //   const centerY = 0;
+
+ 
+  //   ref.current.children[0].position.set(
+  //     x * Math.cos(angleHude) + y* Math.sin(angleHude),
+  //     -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
+  //     position[2]    
+  //   );  
+  // });
+
+
+ 
 
   const handleToggle = useCallback(() => {
     document.body.style.cursor = !active ? "pointer" : "auto";
