@@ -482,8 +482,21 @@ export const WORLDS_THTEE = [
     color: "#11ED83",
     handleClick: () => {
       window.open("https://rollyourown.preview.cartridge.gg/");
+
     },
   },
+    {
+    name: "Autochessia",
+    desc: "Autochessia is a fully on chain auto chess game",
+    logo: "/images/worldlogo/Autochessia.png",
+    twitter:"https://twitter.com/auto_chessia",
+    github:'https://github.com/HelheimLabs/',
+    discord:'https://discord.gg/PYzPq3vZFb',
+    blog:'',
+    color: "white",
+    handleClick: () => {
+      window.open("https://github.com/HelheimLabs/");
+  }
 
 ];
 
