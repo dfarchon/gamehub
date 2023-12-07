@@ -93,10 +93,18 @@ const CameraController = () => {
 
     controls.minDistance = 12;
     controls.maxDistance = 14;
-    controls.maxPolarAngle = Math.PI / 1.8;
-    controls.minPolarAngle = Math.PI / 2.5;
-    controls.maxAzimuthAngle = Math.PI / 9;
-    controls.minAzimuthAngle = -Math.PI / 9;
+    // controls.maxPolarAngle = Math.PI / 1.8;
+    // controls.minPolarAngle = Math.PI / 2.5;
+   
+    // controls.maxAzimuthAngle = Math.PI / 9;
+    // controls.minAzimuthAngle = -Math.PI / 9;
+
+    controls.maxPolarAngle = Math.PI ;
+    controls.minPolarAngle = - Math.PI ;
+
+
+    controls.maxAzimuthAngle = Math.PI ;
+    controls.minAzimuthAngle = - Math.PI ;
 
     return () => {
       controls.dispose();
@@ -276,17 +284,19 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
   });
 }
 function PlanetsFour({ datas, ...props }: { datas: any }) {
+
+
   return datas.map((data: any, index: number) => {
     return (
       <Logo
         key={index}
         position={[
-          Math.sin((2 * Math.PI * index) / datas.length) * 10,
+          Math.sin((2 * Math.PI * index) / datas.length) * 10 ,
           Math.cos((2 * Math.PI * index) / datas.length) * 10,
           0.1,
         ]}
         speed={2}
-        radius={0.5}
+        radius={1}
         data={data}
         scale={1}
         handleClick={data.handleClick}
@@ -312,6 +322,42 @@ function Logo({
   position: [number, number, number];
   scale: number;
 }) {
+
+  const ref = useRef<THREE.Mesh>(null!);
+  
+  let firstTime = true;
+
+  useFrame((state) => {
+    const t = state.clock.getElapsedTime()*0.0001;
+    const angleHude = t;
+    const currentValue = ref.current.position;
+
+    console.log(angleHude);
+    console.log(currentValue);
+    
+
+    let x =  currentValue.x;
+    let y =  currentValue.y;
+
+    if(firstTime){
+      firstTime =false;
+      x= position[0];
+      y= position[1];
+    }
+
+    const centerX = 0;
+    const centerY = 0;
+
+ 
+    
+    ref.current.position.set(
+      x * Math.cos(angleHude) + y* Math.sin(angleHude),
+      -x * Math.sin(angleHude)+ y * Math.cos(angleHude),
+      position[2]    
+    );  
+  });
+
+
   const { setWorld } = useContext(PanelContext);
   const [active, setActive] = useState(false);
   const { scaleAni } = useSpring({
@@ -326,8 +372,8 @@ function Logo({
   const logoTexture = useTexture(data.logo);
 
   return (
-    <mesh onClick={handleClick}>
-      <animated.sprite
+    <mesh  onClick={handleClick}>
+      <animated.sprite ref= {ref}
         position={position}
         scale={scaleAni}
         onPointerEnter={handleToggle}
