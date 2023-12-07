@@ -396,6 +396,34 @@ export const WORLDS_THTEE = [
     },
   },
 
+  {
+    name: "Paima Engine",
+    desc: "Rollup framework for building Autonomous Worlds.",
+    logo: "/images/worldlogo/Paima.png",
+    twitter: 'https://twitter.com/PaimaStudios',
+    github: 'https://github.com/PaimaStudios/paima-engine/',
+    discord: 'https://discord.gg/jZ59ArVaxv',
+    blog: 'https://blog.paimastudios.com/',
+    color: "#19B17B",
+    handleClick: () => {
+      window.open("https://paimastudios.com/");
+    },
+  },
+
+  {
+    name: "Tarochi",
+    desc: "Onchain RPG game. Journey through a vast autonomous world to capture & level-up monsters",
+    logo: "/images/worldlogo/tarochi.png",
+    twitter: 'https://twitter.com/tarochigame',
+    github: 'https://github.com/PaimaStudios/tarochi-game/',
+    discord: 'https://discord.gg/jZ59ArVaxv',
+    blog: '',
+    color: "#fff",
+    handleClick: () => {
+      window.open("https://tarochi-alpha.paimastudios.com/");
+    },
+  },
+
 
   {
     name: "Briq",
