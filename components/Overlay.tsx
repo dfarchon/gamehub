@@ -27,14 +27,14 @@ export default function Overlay({ ...props }: {}) {
     }
   };
 
-  useEffect(() => {
-    // Bind the event listener
-    document.addEventListener("click", handleClickOutside, true);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  }, []);
+  // useEffect(() => {
+  //   // Bind the event listener
+  //   document.addEventListener("click", handleClickOutside, true);
+  //   return () => {
+  //     // Unbind the event listener on clean up
+  //     document.removeEventListener("click", handleClickOutside, true);
+  //   };
+  // }, []);
 
   return (
     <div className="select-none">
