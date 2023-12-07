@@ -327,7 +327,6 @@ function Logo({
 
   return (
     <mesh onClick={handleClick}>
-      {/* <Image url="/images/web3mq.png" transparent opacity={1} /> */}
       <animated.sprite
         position={position}
         scale={scaleAni}

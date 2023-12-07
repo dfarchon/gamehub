@@ -385,7 +385,7 @@ export const WORLDS_THTEE = [
   {
     name: "AW House",
     desc: "AW house is an Ecosystem for Autonomous World builders.",
-    logo: "/images/logo/AWHouse.png",
+    logo: "/images/worldlogo/AWHouse.png",
     twitter:'https://twitter.com/AW_house',
     github:'',
     discord:'',
@@ -400,8 +400,8 @@ export const WORLDS_THTEE = [
   {
     name: "Briq",
     desc: "Collect, build and play with briqs, the building blocks of the metaverse.",
-    logo: "/images/logo/Briq.png",
-    twitter:"",
+    logo: "/images/worldlogo/Briq.png",
+    twitter:"https://twitter.com/briqNFT",
     github:'',
     discord:'',
     blog:'',
@@ -417,10 +417,10 @@ export const WORLDS_THTEE = [
     desc: "Cellula is a fully on-chain artificial life simulation game. \n \
      Players explore, cultivate, evolve, and collect unique Life forms in the game. \n \
     ",
-    logo: "/images/logo/Cellula.png",
-    twitter:"",
+    logo: "/images/worldlogo/Cellula.png",
+    twitter:"https://twitter.com/cellulalifegame",
     github:'',
-    discord:'',
+    discord:'https://discord.com/invite/2PMU2NvDcm',
     blog:'',
     color: " #03feda",
     handleClick: () => {
@@ -446,7 +446,7 @@ export const WORLDS_THTEE = [
   {
     name: "Dojo",
     desc: "Dojo is a provable game engine for Autonomous Worlds.",
-    logo: "/images/logo/Dojo.png",
+    logo: "/images/worldlogo/Dojo.png",
     twitter: "https://twitter.com/ohayo_dojo",
     github: "https://github.com/dojoengine/dojo",
     discord: "https://discord.gg/dojoengine",
@@ -460,7 +460,7 @@ export const WORLDS_THTEE = [
   {
     name: "Cartridge",
     desc: "Cartridge builds games, tooling, and infrastructure for Autonomous Worlds.",
-    logo: "/images/logo/Cartridge.png",
+    logo: "/images/worldlogo/Cartridge.png",
     twitter: "https://twitter.com/cartridge_gg",
     github: "https://github.com/cartridge_gg",
     discord: "https://discord.gg/cartridge",
@@ -474,7 +474,7 @@ export const WORLDS_THTEE = [
   {
     name: "Dope Wars: Roll Your Own",
     desc: "Fully onchain drug arbitrage games inspired by the cult classic Drug Wars.",
-    logo: "/images/logo/RYO.png",
+    logo: "/images/worldlogo/RYO.png",
     twitter: "https://twitter.com/thedopewars",
     github: "https://github.com/dopedao",
     discord: "https://discord.gg/dopewars",
