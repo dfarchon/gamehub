@@ -94,7 +94,15 @@ export default function Overlay({ ...props }: {}) {
               <br />
              <br /></div>:<div></div>
           }
-   
+     {
+          world.docs!==''? 
+            <div> <a href={world.docs?? ""} target="_blank">
+              DOCS
+              </a>
+              <br />
+             <br /></div>:<div></div>
+          }
+
    
        
           {

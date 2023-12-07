@@ -10,6 +10,7 @@ export const DARKFOREST = {
   discord: "https://discord.com/invite/2u2TN6v8r6",
   github: "https://github.com/darkforest-eth",
   blog: "https://blog.zkga.me/",
+  docs: "https://dev-guides.zkga.me/",
   handleClick: () => {
     window.open("https://zkga.me");
   },
@@ -62,6 +63,7 @@ export const WORLDS_THTEE = [
     discord: "https://discord.com/invite/2u2TN6v8r6",
     github: "https://github.com/darkforest-eth",
     blog: "https://blog.zkga.me/",
+    docs: "https://dev-guides.zkga.me/",
     handleClick: () => {
       window.open("https://zkga.me");
     },
@@ -75,8 +77,8 @@ export const WORLDS_THTEE = [
     twitter: 'https://twitter.com/latticexyz',
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/mud',
-    blog: 'https://mud.dev/introduction',
-
+    blog: '',
+    docs: 'https://mud.dev/introduction',
     color: "#ff7513",
     handleClick: () => {
       window.open("https://mud.dev");
@@ -93,7 +95,8 @@ export const WORLDS_THTEE = [
     twitter: 'https://twitter.com/redstonexyz',
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/mud',
-    blog: 'https://redstone.xyz/docs/what-is-redstone',
+    blog: '',
+    docs: 'https://redstone.xyz/docs/what-is-redstone',
 
     color: "red",
     handleClick: () => {
@@ -111,6 +114,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/orden',
     github: 'https://github.com/orden-gg',
     blog: "",
+    docs:'',
     color: "#fff201",
     handleClick: () => {
       window.open("https://github.com/orden-gg");
@@ -127,6 +131,7 @@ export const WORLDS_THTEE = [
     discord: "",
     github: "https://github.com/guild-w",
     blog: "https://buidl.mirror.xyz/",
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://github.com/guild-w");
@@ -145,6 +150,7 @@ export const WORLDS_THTEE = [
     discord: "http://discord.gg/aaHada53mQ",
     github: "http://github.com/dfdao",
     blog: "https://medium.com/dfdao/latest",
+    docs:"",
     handleClick: () => {
       window.open(
         "https://arena.dfdao.xyz/",
@@ -165,6 +171,7 @@ export const WORLDS_THTEE = [
     discord: "https://discord.com/invite/XpBPEnsvgX",
     github: "https://github.com/dfarchon/DFARES-v0.1",
     blog: "https://mirror.xyz/dfarchon.eth",
+    docs:'',
     handleClick: () => {
       window.open(
         "https://dfares-redstone.netlify.app/",
@@ -183,6 +190,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/277dao',
     blog: 'https://mirror.xyz/277share.eth',
+    docs:'',
     color: "#c3c8d0",
     handleClick: () => {
       window.open("https://dfgame.277dao.com/");
@@ -200,6 +208,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/sky-strife-league',
     blog: 'https://lattice.xyz/blog',
+    docs:'https://latticexyz.notion.site/How-to-play-Sky-Strife-8c9f951c605e487cad9e8158bc641835?pvs=4}',
     color: "#c3c8d0",
     handleClick: () => {
       window.open("https://playtest.skystrife.xyz/");
@@ -215,6 +224,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/latticexyz',
     github: 'https://github.com/latticexyz/opcraft',
     blog: 'https://lattice.xyz/blog',
+    docs:'',
     color: "red",
     handleClick: () => {
       window.open("https://craft.mud.dev/");
@@ -228,6 +238,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/BriefCandle/netherscape',
     blog: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://twitter.com/netherscape_xyz");
@@ -244,8 +255,9 @@ export const WORLDS_THTEE = [
     logo: "/images/worldlogo/Primodium.png",
     twitter: 'https://twitter.com/primodiumgame',
     discord: 'https://discord.com/invite/bn7eSSKFWV',
-    blog: '',
     github: '',
+    blog: '',
+    docs:'',
     color: "#62d1d8",
     handleClick: () => {
       window.open("https://primodium.com");
@@ -263,6 +275,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/0xhank/dark-seas',
     blog: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://darkseas.me/");
@@ -279,6 +292,8 @@ export const WORLDS_THTEE = [
     twitter: 'https://twitter.com/engine_study',
     discord: 'https://discord.com/invite/nhpZ5Gsntk',
     github: '',
+    blog:'',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://gaul.app/");
@@ -293,6 +308,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/FlynnSC/zk-hunt',
     blog: 'https://0xparc.org/blog/zk-hunt',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://github.com/FlynnSC/zk-hunt");
@@ -311,6 +327,7 @@ export const WORLDS_THTEE = [
     discord: '',
     blog: 'https://movingcastles.world/',
     github: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://twitter.com/movingcastles_");
@@ -330,6 +347,7 @@ export const WORLDS_THTEE = [
     discord: 'https://github.com/smallbraingames/drawtech',
     github: '',
     blog: '',
+    docs:'',
     color: "#facd0e",
     handleClick: () => {
       window.open("https://www.draw.tech/");
@@ -346,6 +364,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/smallbraingames',
     blog: '',
+    docs:'',
     color: "#dae9fd",
     handleClick: () => {
       window.open("https://www.words3.xyz/");
@@ -360,6 +379,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.com/invite/nhpZ5Gsntk',
     github: 'https://github.com/smallbraingames/network-states-lite',
     blog: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://network-states-smallbraingames.vercel.app/");
@@ -375,6 +395,7 @@ export const WORLDS_THTEE = [
     discord: '',
     github: 'https://github.com/Generative-Labs',
     blog: '',
+    docs:'',
     color: 'white',
     // color: "#9A26F9",
     handleClick: () => {
@@ -390,6 +411,7 @@ export const WORLDS_THTEE = [
     github: '',
     discord: '',
     blog: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://aw.house/");
@@ -404,6 +426,7 @@ export const WORLDS_THTEE = [
     github: 'https://github.com/PaimaStudios/paima-engine/',
     discord: 'https://discord.gg/jZ59ArVaxv',
     blog: 'https://blog.paimastudios.com/',
+    docs:'',
     color: "#19B17B",
     handleClick: () => {
       window.open("https://paimastudios.com/");
@@ -418,6 +441,7 @@ export const WORLDS_THTEE = [
     github: 'https://github.com/PaimaStudios/tarochi-game/',
     discord: 'https://discord.gg/jZ59ArVaxv',
     blog: '',
+    docs:'',
     color: "#fff",
     handleClick: () => {
       window.open("https://tarochi-alpha.paimastudios.com/");
@@ -431,11 +455,12 @@ export const WORLDS_THTEE = [
     logo: "/images/worldlogo/Briq.png",
     twitter: "https://twitter.com/briqNFT",
     github: '',
-    discord: '',
+    discord: 'http://discord.gg/kpvbDCw5pr',
     blog: '',
+    docs:'',
     color: "#f35601",
     handleClick: () => {
-      window.open("https://twitter.com/briqNFT");
+      window.open("https://briq.construction/");
     },
   },
 
@@ -450,6 +475,7 @@ export const WORLDS_THTEE = [
     github: '',
     discord: 'https://discord.com/invite/2PMU2NvDcm',
     blog: '',
+    docs:'',
     color: " #03feda",
     handleClick: () => {
       window.open("https://cellula.life/");
@@ -465,6 +491,7 @@ export const WORLDS_THTEE = [
     github: '',
     discord: 'http://discord.worlds.online/',
     blog: '',
+    docs:'',
     color: "white",
     handleClick: () => {
       window.open("https://twitter.com/awexplorers");
@@ -479,6 +506,7 @@ export const WORLDS_THTEE = [
     github: "https://github.com/dojoengine/dojo",
     discord: "https://discord.gg/dojoengine",
     blog: "",
+    docs:"https://book.dojoengine.org/",
     color: "#FF2F42",
     handleClick: () => {
       window.open("https://dojoengine.org");
@@ -493,6 +521,7 @@ export const WORLDS_THTEE = [
     github: "https://github.com/cartridge_gg",
     discord: "https://discord.gg/cartridge",
     blog: "",
+    docs:"",
     color: "#FBCB4A",
     handleClick: () => {
       window.open("https://cartridge.gg");
@@ -507,6 +536,7 @@ export const WORLDS_THTEE = [
     github: "https://github.com/dopedao",
     discord: "https://discord.gg/dopewars",
     blog: "",
+    docs:"",
     color: "#11ED83",
     handleClick: () => {
       window.open("https://rollyourown.preview.cartridge.gg/");
@@ -521,6 +551,7 @@ export const WORLDS_THTEE = [
     github: 'https://github.com/HelheimLabs/',
     discord: 'https://discord.gg/PYzPq3vZFb',
     blog: '',
+    docs:"",
     color: "white",
     handleClick: () => {
       window.open("https://github.com/HelheimLabs/");
@@ -544,10 +575,27 @@ export const WORLDS_THTEE = [
     github: '',
     discord: 'https://discord.com/invite/altlayer',
     blog: 'https://blog.altlayer.io/?gi=fbf9289d7d63',
-
+    docs:"",
     color: "#787ab4",
     handleClick: () => {
       window.open("https://altlayer.io/");
+    },
+  },
+
+
+  {
+    name: "LootSurvivor",
+    desc: "A roguelike, survival fully onchain game built on Starknet. \n \
+    Built by Bibliotheca DAO contributors and @LootRealms community. ",
+    logo: "/images/worldlogo/LootSurvivor.png",
+    twitter: "https://twitter.com/survivor_bot_69",
+    github: 'https://github.com/BibliothecaDAO/loot-survivor',
+    discord: 'https://discord.com/invite/realmsworld',
+    blog: '',
+    docs: 'https://survivor-docs.realms.world/',
+    color: "#4af626",
+    handleClick: () => {
+      window.open("https://survivor.realms.world/");
     },
   },
 
