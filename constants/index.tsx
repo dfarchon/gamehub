@@ -607,7 +607,7 @@ export const WORLDS_THTEE = [
     discord: 'https://discord.gg/UkarGN9Fjn',
     blog: '',
     docs: 'https://mississippi.gitbook.io/mississippi/',
-    color: "#000000",
+    color: "#DCC7AF",
     handleClick: () => {
       window.open("https://0xmssp.xyz");
     },
