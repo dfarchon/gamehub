@@ -600,7 +600,7 @@ export const WORLDS_THTEE = [
   },
   {
     name: "Mississippi",
-    desc: 'Mississippi is a fully on-chain PVP roguelike game. We hope to create an expansive cavern space, containing abundant resources, which players need to explore and exploit as many resources from the cavern as possible within a fixed time limit. Besides, we will integrate with the Lootverse, such as by "extracting" equipment and resources from Loot Bags and Realms, which can give players specific attributes for each round.',
+    desc: 'Mississippi is a fully on-chain PVP roguelike game. We hope to create an expansive cavern space, containing abundant resources, which players need to explore and exploit as many resources from the cavern as possible within a fixed time limit.',
     logo: "/images/worldlogo/Mississippi.png",
     twitter: "https://twitter.com/0xMississippi",
     github: 'https://github.com/Mississippi-Labs',
