@@ -598,6 +598,20 @@ export const WORLDS_THTEE = [
       window.open("https://survivor.realms.world/");
     },
   },
+  {
+    name: "Mississippi",
+    desc: 'Mississippi is a fully on-chain PVP roguelike game. We hope to create an expansive cavern space, containing abundant resources, which players need to explore and exploit as many resources from the cavern as possible within a fixed time limit. Besides, we will integrate with the Lootverse, such as by "extracting" equipment and resources from Loot Bags and Realms, which can give players specific attributes for each round.',
+    logo: "/images/worldlogo/Mississippi.png",
+    twitter: "https://twitter.com/0xMississippi",
+    github: 'https://github.com/Mississippi-Labs',
+    discord: 'https://discord.gg/UkarGN9Fjn',
+    blog: '',
+    docs: 'https://mississippi.gitbook.io/mississippi/',
+    color: "#000000",
+    handleClick: () => {
+      window.open("https://0xmssp.xyz");
+    },
+  },
 
 ];
 
@@ -646,6 +660,8 @@ export const WORLDS_FOUR = [
       window.open("https://twitter.com/gg_Quest_gg");
     },
   },
+  
+  
 
 ];
 
