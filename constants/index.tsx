@@ -613,6 +613,21 @@ export const WORLDS_THTEE = [
     },
   },
 
+  {
+    name: "GenLoot",
+    desc: " Full on chain role-playing adventure card game（building）",
+    logo: "/images/worldlogo/GenLoot.png",
+    twitter: '',
+    discord: '',
+    github: '',
+    blog: '',
+    docs: '',
+
+    color: "#01FF89",
+    handleClick: () => {
+      window.open("https://genworld.io/");
+    },
+  },
 ];
 
 export const WORLDS_FOUR = [
