@@ -628,6 +628,58 @@ export const WORLDS_THTEE = [
       window.open("https://genworld.io/");
     },
   },
+
+  {
+    name: "Shoshin",
+    desc: " Your first TPS-agnostic Asynchronous Strategy Game. ",
+    logo: "/images/worldlogo/Shoshin.png",
+    twitter: 'https://twitter.com/Shoshin_gg',
+    discord: 'https://discord.com/invite/jNWVSw5fnD',
+    github: 'https://github.com/topology-gg/shoshin',
+    blog: '',
+    docs: '',
+
+    color: "white",
+    handleClick: () => {
+      window.open("https://shoshin.gg/");
+    },
+  },
+
+  {
+    name: "Realms: Eternum",
+    desc: "Eternum is a strategy game that is built on StarkNet.\
+     It is a game of management and conquest, where players must build and defend their Realm to thrive.\
+      The game is governed by a set of rules that are enforced by the game's smart contracts. ",
+    logo: "/images/worldlogo/Eternum.png",
+    twitter: 'https://twitter.com/LootRealms',
+    discord: 'https://discord.com/invite/realmsworld',
+    github: 'https://github.com/BibliothecaDAO/eternum',
+    blog: '',
+    docs: '',
+
+    color: "white",
+    handleClick: () => {
+      window.open("https://eternum.realms.world/");
+    },
+  },
+
+  {
+    name: "PixeLAW",
+    desc: "PixeLAW is a pixel-based Autonomous World built on Starknet using dojo engine ",
+    logo: "/images/worldlogo/PixeLAW.png",
+    twitter: 'https://twitter.com/0xPixeLAW',
+    discord: 'https://discord.com/invite/aeYzsHxAZb',
+    github: 'https://github.com/pixelaw/',
+    blog: '',
+    docs: 'https://pixelaw.github.io/book/',
+
+    color: "white",
+    handleClick: () => {
+      window.open("https://pixelaw.github.io/book/");
+    },
+  },
+
+
 ];
 
 export const WORLDS_FOUR = [
