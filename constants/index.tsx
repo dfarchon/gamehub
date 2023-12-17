@@ -680,6 +680,23 @@ export const WORLDS_THTEE = [
   },
 
 
+  {
+    name: "Underworlds",
+    desc: "Excavating the endless mysteries of the subterranean in the Realms Autonomous (Under)World. A collaboration on Dojo engine \
+     by @EndlessCrawler &  @funDAOmental",
+    logo: "/images/worldlogo/Underworlds.png",
+    twitter: 'https://twitter.com/LootUnderworld',
+    discord: '',
+    github: 'https://github.com/BibliothecaDAO/Frontinus-House-Docs/issues/26',
+    blog: '',
+    docs: 'https://pixelaw.github.io/book/',
+
+    color: "white",
+    handleClick: () => {
+      window.open("https://lootunder.world/");
+    },
+  },
+
 ];
 
 export const WORLDS_FOUR = [
