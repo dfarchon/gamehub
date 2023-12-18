@@ -2,7 +2,7 @@
 
 Enter **Autonomous Worlds** through **Autonomous Worlds Door**.
 
-https://awdoor.vercel.app/
+https://awdoor.xyz/
 
 
 
