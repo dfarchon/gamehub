@@ -1,5 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const font = localFont({
   src: "../fonts/Geologica-Regular.ttf",
@@ -17,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} no-scrollbar`}>{children}</body>
+      <body className={`${font.className} no-scrollbar`}>{children}
+      <Analytics />
+      </body>
     </html>
   );
 }
