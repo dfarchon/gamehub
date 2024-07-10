@@ -8,8 +8,8 @@ const font = localFont({
 });
 
 export const metadata = {
-  title: "Autonomous Worlds Door",
-  description: "Enter Autonomous Worlds through Autonomous Worlds Door. Maintained by DF Archon",
+  title: "FOCG Rabbit Hole",
+  description: "Access to the latest onchain games website with one click.",
 };
 
 export default function RootLayout({

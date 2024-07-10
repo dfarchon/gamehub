@@ -43,20 +43,12 @@ export default function Overlay({ ...props }: {}) {
         className="overlay upperLeft transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster"
         style={{
           color: world.color ?? "#cd5c5c",
-          fontSize: "25px"
+          fontSize: "50px"
         }}
       >
 
-        {'DON\'T WORRY ABOUT GAS FEES'}
-        <br />
-        <br />
-
-        {'DON\'T WORRY ABOUT MAKING MONEY'}
-        <br />
-        <br />
-               
-        LIVING IN THE FUTURE
-
+        Enter latest FOCGs 
+        <br></br>with one click
         
       </div>
       
@@ -113,11 +105,6 @@ export default function Overlay({ ...props }: {}) {
               <br />
              <br /></div>:<div></div>
           }
-     
-      
-
-        
-
        
         {/* <a href="#" onClick={() => setActiveContributors(!activeContributors)}>
           Contributors
@@ -131,10 +118,8 @@ export default function Overlay({ ...props }: {}) {
         }}
       >
         {/* <h1>{planets}</h1> */}
-        <h1 style={{fontSize:"120px"}}> Build </h1>
-
-        <h2 style={{fontSize:"70px"}}> Autonomous</h2>
-        <h1 style={{fontSize:"100px"}}>  Worlds </h1>
+        <h1 style={{fontSize:"100px"}}> FOCG </h1>
+        <h1 style={{fontSize:"80px"}}> Rabbit Hole </h1>
       </div>
       <div
         className="overlay lowerRight transition-all duration-500 ease-in-out  z-30"
@@ -152,8 +137,9 @@ export default function Overlay({ ...props }: {}) {
       <div className="overlay upperCenter transition-all duration-500 ease-in-out  z-30"  
       style={{
           color: world.color ?? "#cd5c5c",
-        }}><a href={"https://github.com/dfarchon/Autonomous-Worlds-Door"} target="_blank">
-        Keeping update...
+           
+        }}><a href={"https://github.com/dfarchon/FOCG-Rabbit-Hole"} target="_blank">
+        Open source Repo is here
         </a> </div>
     </div>
   );
