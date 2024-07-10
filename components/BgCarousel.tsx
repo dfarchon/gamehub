@@ -358,12 +358,29 @@ function Logo({
     scaleAni: active ? scale * 1.5 : scale,
   });
 
-  const handleToggle = useCallback(() => {
-    document.body.style.cursor = !active ? "pointer" : "auto";
-    setActive(!active);
-    setHoverPlanet(!active);
+  const handlePointerEnter = useCallback(() => {
+    document.body.style.cursor = "pointer";
+    setActive(true);
+    setHoverPlanet(true);
     setWorld(data);
-  }, [active]);
+  }, [data]);
+
+  const handlePointerLeave = useCallback(() => {
+    document.body.style.cursor = "auto";
+    setActive(false);
+    setHoverPlanet(false);
+  }, []);
+
+  const handleClickInternal = useCallback(() => {
+    if (active) {
+      setActive(false);
+      setHoverPlanet(false);
+    } else {
+      setActive(true);
+      setHoverPlanet(true);
+      setWorld(data);
+    }
+  }, [active, data]);
 
   const logoTexture = useTexture(data.logo);
 
@@ -381,8 +398,7 @@ function Logo({
     return new THREE.CanvasTexture(canvas);
   }
 
-  const size = Math.min(logoTexture.image.width, logoTexture.image.height); 
-  console.log(size);
+  const size = Math.min(logoTexture.image.width, logoTexture.image.height);
   const circleMaskTexture = createCircularTexture(size);
 
   return (
@@ -390,26 +406,25 @@ function Logo({
       <animated.sprite
         position={position}
         scale={scaleAni}
-        onPointerEnter={handleToggle}
-        onPointerLeave={handleToggle}
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
+        onClick={handleClickInternal}
       >
+        {/* Uncomment this block to apply the circular mask */}
+        {/* <spriteMaterial
+          map={logoTexture}
+          alphaMap={circleMaskTexture}
+          transparent={true}
+          depthWrite={false}
+        /> */}
+
+        {/* Use this block if you don't need the circular mask */}
         <spriteMaterial
           map={logoTexture}
           opacity={1}
           transparent={true}
           toneMapped={false}
-      />
-
-        {/* todo: this make logo a little white */}
-
-        {/* <spriteMaterial
-          map={logoTexture}
-          alphaMap={circleMaskTexture}
-          transparent={true}
-          depthWrite={false} 
-        /> */}
-
-        
+        />
       </animated.sprite>
     </mesh>
   );
