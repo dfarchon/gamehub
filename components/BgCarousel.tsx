@@ -16,10 +16,10 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
 import {
-  DARKFOREST,
-  WORLDS_ONE,
-  WORLDS_TWO,
-  WORLDS_THREE,
+  SkyStrife,
+  GAMES_ONE,
+  GAMES_TWO,
+  GAMES_THREE,
   SPONSORS_FOUR,
   PanelContext,
 } from "@/constants";
@@ -32,12 +32,18 @@ const colors = [
   "blueviolet",
   "midnightblue",
   "pink",
+  "#002b36", // Solarized Dark
+  "#282a36", // Dracula
+  "#2e3440", // Nord
+  "#272822", // Monokai
+  "#282828", // Gruvbox Dark
+  "#263238"  // Material Dark
 ];
 
 extend({ OrbitControls });
 
 export default function BgCarousel(props: any) {
-  const [bgColor, setBgColor] = useState(colors[0]);
+  const [bgColor, setBgColor] = useState(colors[11]);
 
   useEffect(() => {}, []);
 
@@ -55,7 +61,7 @@ export default function BgCarousel(props: any) {
         {/* <color attach="background" args={[colors[slide]]} /> */}
         <ambientLight intensity={0.25} />
 
-        <PlanetsThree datas={WORLDS_THREE} />
+        <PlanetsThree datas={GAMES_THREE} />
 
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
           {/* <Curves /> */}
@@ -63,14 +69,14 @@ export default function BgCarousel(props: any) {
             position={[0, 0, 0.1]}
             speed={2}
             radius={0.5}
-            data={DARKFOREST}
+            data={SkyStrife}
             scale={2}
-            handleClick={DARKFOREST.handleClick}
+            handleClick={SkyStrife.handleClick}
           /> */}
 
-          {/* <PlanetsOne datas={WORLDS_ONE} /> */}
-          {/* <PlanetsTwo datas={WORLDS_TWO} /> */}
-          {/* <PlanetsThree datas={WORLDS_THTEE} /> */}
+          {/* <PlanetsOne datas={GAMES_ONE} /> */}
+          {/* <PlanetsTwo datas={GAMES_TWO} /> */}
+          {/* <PlanetsThree datas={GAMES_THTEE} /> */}
           {/* <PlanetsFour datas={SPONSORS_FOUR} /> */}
         </Float>
 
@@ -245,7 +251,6 @@ function PlanetsOne({ datas, ...props }: { datas: any }) {
 }
 
 function PlanetsTwo({ datas, ...props }: { datas: any }) {
-  
   return datas.map((data: any, index: number) => {
     return (
       <Logo
@@ -290,8 +295,8 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
           <Logo
             key={index}
             position={[
-              Math.sin((2 * Math.PI * index) / datas.length) * 5.5,
-              Math.cos((2 * Math.PI * index) / datas.length) * 5.5,
+              Math.sin((2 * Math.PI * index) / datas.length) * 6.5,
+              Math.cos((2 * Math.PI * index) / datas.length) * 6.5,
               0.1,
             ]}
             speed={2}
@@ -339,7 +344,7 @@ function Logo({
   scale = 1,
   ...props
 }: {
-  data: typeof DARKFOREST;
+  data: typeof SkyStrife;
   handleClick: () => void;
   radius: number;
   speed: number;
@@ -363,20 +368,22 @@ function Logo({
   const logoTexture = useTexture(data.logo);
 
   function createCircularTexture(radius: number) {
-    const canvas = document.createElement('canvas');
+    const canvas = document.createElement("canvas");
     const size = radius * 2;
     canvas.width = size;
     canvas.height = size;
-    const context = canvas.getContext('2d');
-    if(!context) return;
+    const context = canvas.getContext("2d");
+    if (!context) return;
     context.beginPath();
     context.arc(radius, radius, radius, 0, 2 * Math.PI);
-    context.fillStyle = '#ffffff'; 
+    context.fillStyle = "white";
     context.fill();
     return new THREE.CanvasTexture(canvas);
   }
 
-  const circleMaskTexture = createCircularTexture(100); 
+  const size = Math.min(logoTexture.image.width, logoTexture.image.height); 
+  console.log(size);
+  const circleMaskTexture = createCircularTexture(size);
 
   return (
     <mesh ref={ref} onClick={handleClick}>
@@ -386,20 +393,23 @@ function Logo({
         onPointerEnter={handleToggle}
         onPointerLeave={handleToggle}
       >
-        
-        {/* <spriteMaterial
+        <spriteMaterial
           map={logoTexture}
           opacity={1}
           transparent={true}
           toneMapped={false}
-      /> */}
+      />
 
-        <spriteMaterial
+        {/* todo: this make logo a little white */}
+
+        {/* <spriteMaterial
           map={logoTexture}
           alphaMap={circleMaskTexture}
           transparent={true}
-        />
+          depthWrite={false} 
+        /> */}
 
+        
       </animated.sprite>
     </mesh>
   );

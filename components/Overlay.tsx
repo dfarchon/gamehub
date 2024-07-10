@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState, useContext } from "react";
 import Contributors from "./Contributors";
 import LogoDetail from "./LogoDetail";
 
-import { PanelContext, DARKFOREST,GOD } from "@/constants";
+import { PanelContext, SkyStrife,GOD } from "@/constants";
 import "animate.css";
 
 export default function Overlay({ ...props }: {}) {

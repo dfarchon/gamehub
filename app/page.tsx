@@ -5,10 +5,10 @@ import { Suspense, createContext, useState } from "react";
 import { useProgress } from "@react-three/drei";
 
 
-import { PanelContext, DARKFOREST } from "@/constants";
+import { PanelContext, SkyStrife } from "@/constants";
 
 export default function Home() {
-  const [world, setWorld] = useState(DARKFOREST);
+  const [world, setWorld] = useState(SkyStrife);
   const [hoverPlanet, setHoverPlanet] = useState(false);
   const [globalTime, setGlobalTime] = useState(0);
 

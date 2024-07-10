@@ -1,7 +1,7 @@
 import { PanelContext } from "@/constants";
 import Information from "@/public/images/information.svg";
 import React, { useContext, useEffect, useState } from "react";
-import { GOD,DARKFOREST } from "@/constants";
+import { GOD,SkyStrife } from "@/constants";
 
 
 
@@ -49,7 +49,8 @@ export default function LogoDetail({
           }`}
           onClick={handleClick}
         >
-          [{name === "dfarchon" ? "Enter Game" : "View More"}]
+          {"[Enter Game]"}
+          {/* [{name === "dfarchon" ? "Enter Game" : "View More"}] */}
         </a>
       </div>
     </div>
