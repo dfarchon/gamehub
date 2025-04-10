@@ -12,7 +12,7 @@ export type GameProject = {
   blog?: string;
   docs?: string;
   handleClick?: () => void;
-  isTeam: boolean;
+  projectType: 'team' | 'infra' | 'game';
   chain: string;
 };
 
@@ -34,7 +34,7 @@ export const DARKFOREST: GameProject = {
   handleClick: () => {
     window.open("https://zkga.me");
   },
-  isTeam: false,
+  projectType: 'game',
   chain: "Gnosis Chain",
 };
 
@@ -47,7 +47,7 @@ export const DFArchon2: GameProject = {
   handleClick: () => {
     window.open("https://dfarchon.xyz/");
   },
-  isTeam: true,
+  projectType: 'team',
   chain: "",
 };
 
@@ -65,7 +65,7 @@ export const DFArchon: GameProject = {
   handleClick: () => {
     window.open("https://twitter.com/dfarchon");
   },
-  isTeam: true,
+  projectType: 'team',
   chain: "",
 };
 
@@ -84,7 +84,7 @@ export const DF_MUD_V3: GameProject = {
   handleClick: () => {
     window.open("https://dfmud.xyz");
   },
-  isTeam: false,
+  projectType: 'game',
   chain: "EVM",
 };
 
@@ -101,8 +101,8 @@ export const MovingCastles: GameProject = {
   handleClick: () => {
     window.open("https://x.com/movingcastles_");
   },
-  isTeam: true,
-  chain: "Ethereum",
+  projectType: 'team',
+  chain: "",
 };
 
 

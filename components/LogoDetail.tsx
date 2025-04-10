@@ -15,7 +15,7 @@ export default function LogoDetail({
 }) {
   // const ref = useRef(null!);
   const { world } = useContext(PanelContext);
-  const { name, logo, desc, color, handleClick, isTeam, chain } = world;
+  const { name, logo, desc, color, handleClick, projectType, chain } = world;
 
   return active ? (
     <div
@@ -39,8 +39,10 @@ export default function LogoDetail({
 
       >
         <div className="flex flex-wrap gap-2 mb-2">
-          <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700">{isTeam ? "Team" : "Game"}</span>
-          {!isTeam && <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700"> {chain}</span>}
+          {projectType !== 'team' && chain && <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700"> {chain}</span>}
+          <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700">
+            {projectType === 'team' ? "Team" : projectType === 'infra' ? "Infra" : "Game"}
+          </span>
         </div>
 
         {/* <TextFromRandomLetters text={desc} speed={1} /> */}
