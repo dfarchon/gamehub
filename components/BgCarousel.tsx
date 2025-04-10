@@ -22,6 +22,7 @@ import {
   SPONSORS_FOUR,
   PanelContext,
   DF_MUD_V3,
+  DARKFOREST,
 } from "@/constants";
 
 const colors = [
@@ -65,19 +66,12 @@ export default function BgCarousel(props: any) {
 
         <Float speed={2} rotationIntensity={0.5} floatIntensity={2}>
           {/* <Curves /> */}
-          {/* <Logo
-            position={[0, 0, 0.1]}
-            speed={2}
-            radius={0.5}
-            data={SkyStrife}
-            scale={2}
-            handleClick={SkyStrife.handleClick}
-          /> */}
 
-          {/* <PlanetsOne datas={GAMES_ONE} /> */}
-          {/* <PlanetsTwo datas={GAMES_TWO} /> */}
-          {/* <PlanetsThree datas={GAMES_THTEE} /> */}
-          {/* <PlanetsFour datas={SPONSORS_FOUR} /> */}
+          {/* 
+          <PlanetsOne datas={GAMES_ONE} />
+          <PlanetsTwo datas={GAMES_TWO} />
+          < PlanetsThree datas={GAMES_THREE} />
+          <PlanetsFour datas={SPONSORS_FOUR} /> */}
         </Float>
 
         <Stars
@@ -289,7 +283,6 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
 
   return (
     <group ref={ref} rotation={[0, 0, 0]} position={[0, 0.5, 0]}>
-      {" "}
       {datas.map((data: any, index: number) => {
         return (
           <Logo
