@@ -28,7 +28,6 @@ export default function LogoDetail({
     >
       <div className="flex flex-row justify-left ">
         <div className="logo my-auto">
-
           <img src={logo} alt={name} width={60} style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div className="my-auto grow text-3xl mx-3 hyphens-manual">{name}</div>
@@ -39,9 +38,9 @@ export default function LogoDetail({
 
       >
         <div className="flex flex-wrap gap-2 mb-2">
-          {projectType !== 'team' && chain && <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700"> {chain}</span>}
+          {chain && <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700"> {chain}</span>}
           <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700">
-            {projectType === 'team' ? "Team" : projectType === 'infra' ? "Infra" : "Game"}
+            {projectType === 'team' ? "Team" : projectType === 'infra' ? "Infrastructure" : "Game"}
           </span>
         </div>
 
@@ -56,8 +55,9 @@ export default function LogoDetail({
             }`}
           onClick={handleClick}
         >
-          {"[Enter Game]"}
-          {/* [{name === "dfarchon" ? "Enter Game" : "View More"}] */}
+          {projectType === 'team' ? "[Visit Team]" :
+            projectType === 'infra' ? "[Visit Project]" :
+              "[Enter Game]"}
         </a>
       </div>
     </div>

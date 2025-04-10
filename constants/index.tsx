@@ -38,18 +38,7 @@ export const DARKFOREST: GameProject = {
   chain: "Gnosis Chain",
 };
 
-export const DFArchon2: GameProject = {
-  name: "DF Archon",
-  desc: "DF Archon is a development team focused on fully onchain game, \
-  working on a more user-friendly gaming environment.",
-  logo: "/images/gamelogo/DFArchon.png",
-  color: "pink",
-  handleClick: () => {
-    window.open("https://dfarchon.xyz/");
-  },
-  projectType: 'team',
-  chain: "",
-};
+
 
 export const DFArchon: GameProject = {
   name: "DFArchon",
@@ -66,7 +55,7 @@ export const DFArchon: GameProject = {
     window.open("https://twitter.com/dfarchon");
   },
   projectType: 'team',
-  chain: "",
+  chain: "EVM",
 };
 
 export const DF_MUD_V3: GameProject = {
@@ -102,9 +91,300 @@ export const MovingCastles: GameProject = {
     window.open("https://x.com/movingcastles_");
   },
   projectType: 'team',
+  chain: "EVM",
+};
+
+export const GrugsLair: GameProject = {
+  name: "Grug's Lair",
+  desc: "The next level of Onchain gaming. Built for players, driven by players.",
+  logo: "/images/2025-project-logo/GrugsLair.jpg",
+  twitter: "https://x.com/GrugsLair",
+  discord: "https://discord.gg/Aa43XBgYvh",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/GrugsLair");
+  },
+  projectType: 'team',
   chain: "",
 };
 
+export const Blobarena: GameProject = {
+  name: "Blobarena",
+  desc: "Blob Arena is here! 🏟️ ⚔️ On-chain blob-battles ",
+  logo: "/images/2025-project-logo/Blobarena.png",
+  twitter: "https://x.com/BlobArena",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/BlobArena");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+export const RRisingRevenant: GameProject = {
+  name: "Rising Revenant",
+  desc: "Tactical fully Onchain game.",
+  logo: "/images/2025-project-logo/RRisingRevenant.jpg",
+  twitter: "https://x.com/RRisingRevenant",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/RRisingRevenant");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+export const zKorp: GameProject = {
+  name: "zKorp",
+  desc: "Onchain game studio deploying games on Starknet from ProvableMat, Cheelax and Crowsmos",
+  logo: "/images/2025-project-logo/zKorp.jpg",
+  twitter: "https://x.com/zKorp_",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/zKorp_");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+export const ForcePrime: GameProject = {
+  name: "Force Prime",
+  desc: "Onchain strategy game. ALL13 @alliancedao.",
+  logo: "/images/2025-project-logo/ForcePrime_io.jpg",
+  twitter: "https://x.com/forceprime_io",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://forceprime.io/");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+export const FOCGERS: GameProject = {
+  name: "FOCGERS UNITE",
+  desc: "Fully onchain games. That's what it's all about. Ready to get FOCGed? 👉 👈",
+  logo: "/images/2025-project-logo/FOCGERS.jpg",
+  twitter: "https://x.com/FOCGERS",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://pods.media/focgers");
+  },
+  projectType: 'team',
+  chain: "",
+};
+
+export const ponzidotland: GameProject = {
+  name: "ponzi.land",
+  desc: "No token launched | Get rugged",
+  logo: "/images/2025-project-logo/ponzidotland.jpg",
+  twitter: "https://x.com/ponzidotland",
+  discord: "discord.gg/ponziland",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://ponzi.land/");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+
+export const ArchetypalTech: GameProject = {
+  name: "Archetypal Tech",
+  desc: "Creators of @OrugginTrail, prototyping #FOCG in @ohayo_dojo, @mud_dev, & @WorldEngineGG + building #AW UGC platforms on @starknet @fluentxyz & @CelestiaOrg",
+  logo: "/images/2025-project-logo/archetypaltech.jpg",
+  twitter: "https://x.com/archetypaltech",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/archetypaltech");
+  },
+  projectType: 'team',
+  chain: "",
+};
+
+
+export const CaravanaStudio: GameProject = {
+  name: "Caravana Studio",
+  desc: "Game Studio building crypto native games on @Starknet | @JokersOfNeon and @0xStarkane",
+  logo: "/images/2025-project-logo/caravana_studio.jpg",
+  twitter: "https://x.com/caravana_studio",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/caravana_studio");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+export const Pistols_gg: GameProject = {
+  name: "Pistols at Dawn",
+  desc: "0 paces, one shot. Whether you are duelling for honour or vengeance, be sure to put the bastard in the dirt. ",
+  logo: "/images/2025-project-logo/Pistols_gg.jpg",
+  twitter: "https://x.com/Pistols_gg",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/Pistols_gg");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+export const Underware: GameProject = {
+  name: "Underware",
+  desc: "A game studio building on-chain games and autonomous worlds.",
+  logo: "/images/2025-project-logo/underware_gg.jpg",
+  twitter: "https://x.com/underware_gg",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://underware.gg");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+export const provablegames: GameProject = {
+  name: "Provable Games",
+  desc: "making blockchains fun.",
+  logo: "/images/2025-project-logo/provablegames.jpg",
+  twitter: "https://x.com/provablegames",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://provable.games/");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+export const LootSurvivor: GameProject = {
+  name: "Loot Survivor",
+  desc: "A fully onchain arcade dungeon crawler built on Starknet. Explore dynamically generated dungeons while you fight for your life against beasts and obstacles.",
+  logo: "/images/2025-project-logo/LootSurvivor.png",
+  twitter: "https://x.com/lootsurvivor",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://lootsurvivor.io/");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+export const darkshuffle_gg: GameProject = {
+  name: "Dark Shuffle",
+  desc: "Fully onchain deck-building game.",
+  logo: "/images/2025-project-logo/darkshuffle_gg.png",
+  twitter: "https://x.com/darkshuffle_gg",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://darkshuffle.io/");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
+export const budokan_gg: GameProject = {
+  name: "budokan_gg",
+  desc: "the onchain gaming arena.",
+  logo: "/images/2025-project-logo/budokan_gg.jpg",
+  twitter: "https://x.com/budokan_gg",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://budokan.gg/");
+  },
+  projectType: 'infra',
+  chain: "Starknet",
+};
+
+export const evolute_studio: GameProject = {
+  name: "Evolute",
+  desc: "Indie Game Studio. Pixel, mobile, decentralized 🤖🎮",
+  logo: "/images/2025-project-logo/evolute_studio.png",
+  twitter: "https://x.com/evolute_studio",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://x.com/evolute_studio");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
+
+
+export const ByteBeasts: GameProject = {
+  name: "ByteBeasts",
+  desc: "We are building the first interconnected on-chain games franchise.",
+  logo: "/images/2025-project-logo/0xByteBeasts.jpg",
+  twitter: "https://x.com/0xbytebeasts",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://www.babybeasts.games/");
+  },
+  projectType: 'team',
+  chain: "Starknet",
+};
 
 
 // =====================================================================
@@ -122,7 +402,22 @@ export const GAMES_THREE = [
   DFArchon,
   DF_MUD_V3,
   MovingCastles,
-
+  GrugsLair,
+  Blobarena,
+  RRisingRevenant,
+  zKorp,
+  ForcePrime,
+  FOCGERS,
+  ponzidotland,
+  ArchetypalTech,
+  CaravanaStudio,
+  Pistols_gg,
+  Underware,
+  provablegames,
+  LootSurvivor,
+  darkshuffle_gg,
+  budokan_gg,
+  evolute_studio
 ];
 
 // Group Four Games (currently empty)

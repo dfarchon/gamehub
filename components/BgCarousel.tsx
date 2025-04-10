@@ -302,7 +302,7 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
             speed={2}
             radius={0.5}
             data={data}
-            scale={2.5}
+            scale={1.8}
             handleClick={data.handleClick}
           />
         );
