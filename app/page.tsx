@@ -34,7 +34,8 @@ export default function Home() {
             transition: 'transform 0.3s',
           }}
         >
-          Open Source Code
+          Make pull request to add your project
+
         </a>
       </header>
 

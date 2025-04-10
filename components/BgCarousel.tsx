@@ -55,7 +55,7 @@ export default function BgCarousel(props: any) {
         shadows
         className="absolute w-full h-full z-10"
         camera={{
-          position: [0, 1, 14],
+          position: [0, -2, 14],
         }}
       >
         {/* <color attach="background" args={[colors[slide]]} /> */}
@@ -288,7 +288,7 @@ function PlanetsThree({ datas, ...props }: { datas: any }) {
   });
 
   return (
-    <group ref={ref} rotation={[0, 0, 0]}>
+    <group ref={ref} rotation={[0, 0, 0]} position={[0, 0.5, 0]}>
       {" "}
       {datas.map((data: any, index: number) => {
         return (

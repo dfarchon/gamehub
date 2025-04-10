@@ -44,7 +44,6 @@ export default function Overlay({ ...props }: {}) {
         style={{
           color: world?.color ?? "#cd5c5c",
           fontSize: "50px",
-          marginTop: "20px"
         }}
       >
 
@@ -58,7 +57,6 @@ export default function Overlay({ ...props }: {}) {
         className="overlay upperRight transition-all duration-500 ease-in-out animate__animated animate__zoomIn animate__faster z-50"
         style={{
           color: world?.color ?? "#cd5c5c",
-          marginTop: "20px"
         }}
       >
 
