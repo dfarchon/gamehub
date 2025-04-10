@@ -5,43 +5,61 @@ import { Suspense, createContext, useState } from "react";
 import { useProgress } from "@react-three/drei";
 
 
-import { PanelContext, SkyStrife } from "@/constants";
+import { PanelContext, DARKFOREST, DF_MUD_V3 } from "@/constants";
 
 export default function Home() {
-  const [world, setWorld] = useState(SkyStrife);
+  const [world, setWorld] = useState(DF_MUD_V3);
   const [hoverPlanet, setHoverPlanet] = useState(false);
   const [globalTime, setGlobalTime] = useState(0);
 
   return (
-    <main className="h-screen w-screen overflow-hidden">
-      <Suspense fallback={<Loader />}>
-        <PanelContext.Provider
-          value={{
-            world,
-            setWorld: (data) => {
-              setWorld(data);
-              // setActive();
-            },
-            hoverPlanet,
-            setHoverPlanet: (status) => {
-              setHoverPlanet(status);
-            },
-            globalTime,
-            setGlobalTime: (time) => {
-              setGlobalTime(time);
-            }
+    <div className="h-screen  w-screen overflow-hidden">
+      <header className="text-white text-center py-6" style={{ backgroundColor: '#ffc0cb' }}>
+        <a
+          href="https://github.com/dfarchon/gamehub"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white px-6 py-3 rounded-full"
+          style={{
+            color: '#ffc0cb',
+            transition: 'transform 0.3s',
           }}
         >
-          <BgCarousel />
-          <Overlay />
-        </PanelContext.Provider>
-      </Suspense>
-      {/* <Loader /> */}
+          Open Source Code
+        </a>
+      </header>
 
-      {/* <div className="h-32 w-full flex">
-        
-      </div> */}
-    </main>
+
+      <main className=" ">
+        <Suspense fallback={<Loader />}>
+          <PanelContext.Provider
+            value={{
+              world,
+              setWorld: (data) => {
+                setWorld(data);
+                // setActive();
+              },
+              hoverPlanet,
+              setHoverPlanet: (status) => {
+                setHoverPlanet(status);
+              },
+              globalTime,
+              setGlobalTime: (time) => {
+                setGlobalTime(time);
+              }
+            }}
+          >
+            <BgCarousel />
+            <Overlay />
+          </PanelContext.Provider>
+        </Suspense>
+        {/* <Loader /> */}
+
+        {/* <div className="h-32 w-full flex">
+          
+        </div> */}
+      </main>
+    </div>
   );
 }
 

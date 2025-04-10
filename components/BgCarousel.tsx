@@ -16,12 +16,12 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
 import {
-  SkyStrife,
   GAMES_ONE,
   GAMES_TWO,
   GAMES_THREE,
   SPONSORS_FOUR,
   PanelContext,
+  DF_MUD_V3,
 } from "@/constants";
 
 const colors = [
@@ -45,7 +45,7 @@ extend({ OrbitControls });
 export default function BgCarousel(props: any) {
   const [bgColor, setBgColor] = useState(colors[11]);
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return (
     <div className="slider flex">
@@ -55,7 +55,7 @@ export default function BgCarousel(props: any) {
         shadows
         className="absolute w-full h-full z-10"
         camera={{
-          position: [0, 0, 14],
+          position: [0, 1, 14],
         }}
       >
         {/* <color attach="background" args={[colors[slide]]} /> */}
@@ -192,9 +192,9 @@ function Curves(props: any) {
         points={pointsEllipse}
         color="#e2e2e2"
         lineWidth={0.05}
-        // dashed
-        // dashSize={0.6}
-        // dashScale={3}
+      // dashed
+      // dashSize={0.6}
+      // dashScale={3}
       />
       <Line
         worldUnits
@@ -344,7 +344,7 @@ function Logo({
   scale = 1,
   ...props
 }: {
-  data: typeof SkyStrife;
+  data: typeof DF_MUD_V3;
   handleClick: () => void;
   radius: number;
   speed: number;
@@ -383,23 +383,44 @@ function Logo({
   }, [active, data]);
 
   const logoTexture = useTexture(data.logo);
+  const [circularTexture, setCircularTexture] = useState<THREE.Texture | null>(null);
 
-  function createCircularTexture(radius: number) {
-    const canvas = document.createElement("canvas");
-    const size = radius * 2;
-    canvas.width = size;
-    canvas.height = size;
-    const context = canvas.getContext("2d");
-    if (!context) return;
-    context.beginPath();
-    context.arc(radius, radius, radius, 0, 2 * Math.PI);
-    context.fillStyle = "white";
-    context.fill();
-    return new THREE.CanvasTexture(canvas);
-  }
+  useEffect(() => {
+    if (logoTexture && logoTexture.image) {
+      const image = logoTexture.image;
+      const canvas = document.createElement("canvas");
+      const size = Math.min(image.width, image.height);
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext("2d");
 
-  const size = Math.min(logoTexture.image.width, logoTexture.image.height);
-  const circleMaskTexture = createCircularTexture(size);
+      if (ctx) {
+        // Create circular clipping path
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+
+        // Draw the image inside the circular path
+        ctx.drawImage(
+          image,
+          (image.width - size) / 2,
+          (image.height - size) / 2,
+          size,
+          size,
+          0,
+          0,
+          size,
+          size
+        );
+
+        // Create texture from canvas
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.needsUpdate = true;
+        setCircularTexture(texture);
+      }
+    }
+  }, [logoTexture]);
 
   return (
     <mesh ref={ref} onClick={handleClick}>
@@ -410,20 +431,10 @@ function Logo({
         onPointerLeave={handlePointerLeave}
         onClick={handleClickInternal}
       >
-        {/* Uncomment this block to apply the circular mask */}
-        {/* <spriteMaterial
-          map={logoTexture}
-          alphaMap={circleMaskTexture}
+        <spriteMaterial
+          map={circularTexture || logoTexture}
           transparent={true}
           depthWrite={false}
-        /> */}
-
-        {/* Use this block if you don't need the circular mask */}
-        <spriteMaterial
-          map={logoTexture}
-          opacity={1}
-          transparent={true}
-          toneMapped={false}
         />
       </animated.sprite>
     </mesh>

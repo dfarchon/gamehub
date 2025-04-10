@@ -8,7 +8,7 @@ const font = localFont({
 });
 
 export const metadata = {
-  title: "FOCG Rabbit Hole",
+  title: "GameHub",
   description: "Access to the latest onchain games website with one click.",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} no-scrollbar`}>{children}
-      <Analytics />
+        <Analytics />
       </body>
     </html>
   );

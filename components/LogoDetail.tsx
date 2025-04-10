@@ -1,7 +1,7 @@
 import { PanelContext } from "@/constants";
 import Information from "@/public/images/information.svg";
 import React, { useContext, useEffect, useState } from "react";
-import { GOD,SkyStrife } from "@/constants";
+import { DARKFOREST } from "@/constants";
 
 
 
@@ -14,8 +14,8 @@ export default function LogoDetail({
   active?: boolean;
 }) {
   // const ref = useRef(null!);
-  const {world} = useContext(PanelContext);
-  const { name, logo, desc, color, handleClick } = world;
+  const { world } = useContext(PanelContext);
+  const { name, logo, desc, color, handleClick, isTeam, chain } = world;
 
   return active ? (
     <div
@@ -28,25 +28,30 @@ export default function LogoDetail({
     >
       <div className="flex flex-row justify-left ">
         <div className="logo my-auto">
-          <img src={logo} alt={name} width={60} />
+
+          <img src={logo} alt={name} width={60} style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div className="my-auto grow text-3xl mx-3 hyphens-manual">{name}</div>
       </div>
       <div
         className="desc text-md mx-2 mt-3 normal-case  leading-relaxed whitespace-normal hyphens-manual mb-4 whitespace-pre-line"
-        // style={{ minHeight: (desc?.length / 24) * 20 + 50 }}
-        
+      // style={{ minHeight: (desc?.length / 24) * 20 + 50 }}
+
       >
+        <div className="flex flex-wrap gap-2 mb-2">
+          <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700">{isTeam ? "Team" : "Game"}</span>
+          {!isTeam && <span className="px-2 py-1 bg-gray-200 rounded-full text-sm text-gray-700"> {chain}</span>}
+        </div>
+
         {/* <TextFromRandomLetters text={desc} speed={1} /> */}
         {desc}
       </div>
       <div className="mt-auto flex text-white mb-5">
         <a
-          className={`ml-auto mx-2 text-[#FFF8DC] z-30 cursor-pointer ${
-            name === "dfarchon"
-              ? "text-xl animate__animated animate__heartBeat animate__infinite	infinite"
-              : ""
-          }`}
+          className={`ml-auto mx-2 text-[#FFF8DC] z-30 cursor-pointer ${name === "dfarchon"
+            ? "text-xl animate__animated animate__heartBeat animate__infinite	infinite"
+            : ""
+            }`}
           onClick={handleClick}
         >
           {"[Enter Game]"}
@@ -60,8 +65,8 @@ export default function LogoDetail({
       width="96"
       height="96"
       className="animate__animated animate__zoomIn"
-      onMouseOver={() => world !== GOD && setActive(true)}
-      style={{ backgroundColor:   "blueviolet"}}
+      onMouseOver={() => world !== DARKFOREST && setActive(true)}
+      style={{ backgroundColor: "blueviolet" }}
     />
   );
 }

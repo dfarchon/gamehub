@@ -1,18 +1,14 @@
-# FOCG Rabbit Hole
+# Game Hub
 
-The latest updates for broadly-defined on-chain games.
+The latest updates for onchain games.
 
 Access to the latest onchain games website with one click.
-
-
 
 ## Todo list
 
 1. raise a cool name
-2. Add more docs  to make it easier for others to use the code as a template.
+2. Add more docs to make it easier for others to use the code as a template.
 3. Add a tipping feature + comments
-
-
 
 # Previous log
 
