@@ -387,7 +387,7 @@ export const ByteBeasts: GameProject = {
 
 export const PopCraft: GameProject = {
   name: "PopCraft",
-  desc: "PopCraft is a fully on-chain casual match game — the FOCG with the highest potential for composability, turning cross-app composability into more than just a meme!",
+  desc: "PopCraft is a fully onchain casual match game — the FOCG with the highest potential for composability, turning cross-app composability into more than just a meme!",
   logo: "/images/2025-project-logo/PopCraft.jpg",
   twitter: "https://x.com/PopCraftOnChain",
   discord: "https://t.me/PopCraftOnChain",
