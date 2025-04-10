@@ -42,8 +42,7 @@ export const DARKFOREST: GameProject = {
 
 export const DFArchon: GameProject = {
   name: "DFArchon",
-  desc: "DF Archon is a development team focused on fully onchain game, \
-  working on a more user-friendly gaming environment.",
+  desc: "DFArchon is a community dedicated to the pursuit of onchain reality, composed of enthusiasts passionate about emerging technologies.",
   logo: "/images/2025-project-logo/dfarchon.jpg",
   color: "pink",
   twitter: "https://twitter.com/dfarchon",
