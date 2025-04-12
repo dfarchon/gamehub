@@ -402,6 +402,23 @@ export const PopCraft: GameProject = {
   chain: "EVM",
 };
 
+export const Conquest: GameProject = {
+  name: "Conquest.eth",
+  desc: "A permission-less and persistent game of diplomacy",
+  logo: "/images/2025-project-logo/conquest.jpg",
+  twitter: "https://x.com/conquest_eth",
+  discord: "https://discord.com/invite/Qb4gr2ekfr",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://conquest.game/");
+  },
+  projectType: 'game',
+  chain: "EVM",
+};
+
 
 // =====================================================================
 // Game Group Definitions
@@ -433,8 +450,10 @@ export const GAMES_THREE = [
   LootSurvivor,
   darkshuffle_gg,
   budokan_gg,
+  evolute_studio,
+  ByteBeasts,
   PopCraft,
-  evolute_studio
+  Conquest
 ];
 
 // Group Four Games (currently empty)
