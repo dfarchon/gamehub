@@ -419,6 +419,57 @@ export const Conquest: GameProject = {
   chain: "EVM",
 };
 
+export const BattleForBlockchain: GameProject = {
+  name: "Battle for Blockchain",
+  desc: " Fully onchain strategy game with stakes, building with initia.",
+  logo: "/images/2025-project-logo/battleforblock.png",
+  twitter: "https://x.com/battleforblock",
+  discord: "https://discord.com/invite/battleforblockchain",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://battleforblockchain.com/");
+  },
+  projectType: 'game',
+  chain: "EVM",
+};
+
+export const Kamigochi: GameProject = {
+  name: "Kamigotchi",
+  desc: "❤︎ an onchain universe, by @asph0d37.minting soon on mainnet ❤︎",
+  logo: "/images/2025-project-logo/kamigotchi.png",
+  twitter: "https://x.com/kamigotchiworld",
+  discord: "https://discord.com/invite/GYVgWRmqNH",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "#43f771",
+  handleClick: () => {
+    window.open("https://kamigotchi.world/");
+  },
+  projectType: 'game',
+  chain: "EVM",
+};
+
+export const Eternum: GameProject = {
+  name: "Eternum",
+  desc: "Multiplayer Civilization with a real economy that never sleeps, Eternum is an AI-agent infused fully onchain MMO.",
+  logo: "/images/2025-project-logo/Eternum.png",
+  twitter: "https://x.com/RealmsEternum",
+  discord: "https://discord.com/invite/realmsworld",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("Eternum.Realms.World");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
 
 // =====================================================================
 // Game Group Definitions
@@ -453,7 +504,10 @@ export const GAMES_THREE = [
   evolute_studio,
   ByteBeasts,
   PopCraft,
-  Conquest
+  Conquest,
+  BattleForBlockchain,
+  Kamigochi,
+  Eternum
 ];
 
 // Group Four Games (currently empty)
