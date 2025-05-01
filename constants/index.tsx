@@ -248,6 +248,23 @@ export const CaravanaStudio: GameProject = {
   chain: "Starknet",
 };
 
+export const JokersOfNeon: GameProject = {
+  name: "Jokers of Neon",
+  desc: "A roguelike card game where every hand counts. Build your deck, beat challenges, climb the leaderboard.",
+  logo: "/images/2025-project-logo/jokers_of_neon.jpg",
+  twitter: "https://x.com/jokers_of_neon",
+  discord: "",
+  github: "",
+  blog: "",
+  docs: "",
+  color: "white",
+  handleClick: () => {
+    window.open("https://jokersofneon.com");
+  },
+  projectType: 'game',
+  chain: "Starknet",
+};
+
 export const Pistols_gg: GameProject = {
   name: "Pistols at Dawn",
   desc: "0 paces, one shot. Whether you are duelling for honour or vengeance, be sure to put the bastard in the dirt. ",
@@ -495,6 +512,7 @@ export const GAMES_THREE = [
   ponzidotland,
   ArchetypalTech,
   CaravanaStudio,
+  JokersOfNeon,
   Pistols_gg,
   Underware,
   provablegames,
