@@ -464,7 +464,7 @@ export const Kamigochi: GameProject = {
   docs: "",
   color: "#43f771",
   handleClick: () => {
-    window.open("https://kamigotchi.world/");
+    window.open("https://app.kamigotchi.io");
   },
   projectType: 'game',
   chain: "EVM",
